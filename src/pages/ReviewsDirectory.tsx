@@ -10,42 +10,42 @@ function ReviewsDirectory() {
       slug: "southern-cross",
       rating: 4.8,
       description: "New Zealand's largest health insurer with comprehensive coverage options",
-      logo: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=100&h=100"
+      logo: "https://logo.clearbit.com/southerncross.co.nz"
     },
     {
       name: "nib",
       slug: "nib", 
       rating: 4.6,
       description: "Innovative health insurance with flexible plans and digital services",
-      logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/4a058346a1493099f50a6440ad785bb567faaafe/logos/nib.png?raw=true"
+      logo: "https://logo.clearbit.com/nib.co.nz"
     },
     {
       name: "AIA",
       slug: "aia",
       rating: 4.7,
       description: "Comprehensive health coverage with Vitality wellness program",
-      logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/43218b7c29f7e5081ecaefad96816bab4fa8b126/logos/AIA.png?raw=true"
+      logo: "https://logo.clearbit.com/aia.co.nz"
     },
     {
       name: "Partners Life",
       slug: "partners-life",
       rating: 4.6,
       description: "Innovative insurance solutions with comprehensive trauma coverage",
-      logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/f364b3eb97e017c6d77190cbc71e27c01942bd4d/logos/PartnersLife_logo.png?raw=true"
+      logo: "https://logo.clearbit.com/partnerslife.co.nz"
     },
     {
       name: "Accuro",
       slug: "accuro",
       rating: 4.5,
       description: "Member-focused health insurance with competitive premiums",
-      logo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&h=100"
+      logo: "https://logo.clearbit.com/accuro.co.nz"
     },
     {
       name: "UniMed",
       slug: "unimed",
       rating: 4.4,
       description: "Workplace health plans with family coverage options",
-      logo: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=100&h=100"
+      logo: "https://logo.clearbit.com/unimed.co.nz"
     }
   ];
 
