@@ -1,0 +1,34 @@
+# Force HTTPS and canonical non-www domain
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+# Legacy URL redirects
+Redirect 301 /contact-us /contact
+Redirect 301 /post/health-coverage-after-50-in-nz /guides/seniors
+Redirect 301 /post/young-professionals-health-insurance /guides/young-professionals
+Redirect 301 /post/comparison-guide-2024 /compare
+Redirect 301 /uncategorized /blog
+Redirect 301 /author /about
+Redirect 301 /author/admin /about
+Redirect 301 /category/uncategorized /blog
+Redirect 301 /advertiser-disclosure /terms
+
+# Review page redirects
+Redirect 301 /reviews/asb /reviews/southern-cross
+Redirect 301 /reviews/aa /reviews/aia
+Redirect 301 /reviews/tower /reviews/southern-cross
+Redirect 301 /reviews/state /reviews/southern-cross
+Redirect 301 /reviews/cove /reviews/southern-cross
+Redirect 301 /reviews/ami /reviews/southern-cross
+
+# Handle trailing slashes for key pages
+RedirectMatch 301 ^/reviews/([^/]+)/$ /reviews/$1
+RedirectMatch 301 ^/(blog|guides|reviews)/$ /$1
+
+# Fallback for SPA - serve index.html for all other routes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

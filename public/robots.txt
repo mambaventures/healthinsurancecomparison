@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block non-public pages
+Disallow: /quotes/thank-you
+
+# Sitemaps
+Sitemap: https://healthinsurancecomparison.co.nz/sitemap.xml
+
+# Crawl delay to prevent overloading
+Crawl-delay: 1

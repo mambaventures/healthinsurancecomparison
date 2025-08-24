@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Health Insurance Comparison</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div class="flex justify-between items-center">
+        <a href="/" class="flex items-center">
+          <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+          </svg>
+          <span class="ml-2 text-xl font-bold text-gray-900">Health Insurance Comparison</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Success Message -->
+    <div class="text-center mb-12">
+      <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+        <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        Thank You for Your Request!
+      </h1>
+      <p class="text-xl text-gray-600">
+        Your health insurance quote is being prepared
+      </p>
+    </div>
+
+    <!-- Next Steps Card -->
+    <div class="bg-white rounded-xl shadow-xl p-8 mb-8">
+      <div class="flex items-center justify-between mb-6 pb-6 border-b">
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900">What Happens Next?</h2>
+          <p class="text-gray-600 mt-1">Here's what you can expect</p>
+        </div>
+        <img 
+          src="https://github.com/mambaventures/healthinsurancecomparison/blob/02b4a9140412acccb2098457e896198814ee45c0/main/logos/legacy.png?raw=true"
+          alt="Legacy Group Logo"
+          class="h-12 object-contain"
+        />
+      </div>
+
+      <div class="space-y-6">
+        <div class="flex items-start">
+          <div class="bg-blue-100 rounded-full p-3 mr-4">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900">Expert Consultation</h3>
+            <p class="text-gray-600">A licensed insurance advisor from Legacy Group will call you within 24 hours to discuss your options.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start">
+          <div class="bg-blue-100 rounded-full p-3 mr-4">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900">Email Confirmation</h3>
+            <p class="text-gray-600">Check your inbox for a confirmation email with your quote details.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start">
+          <div class="bg-blue-100 rounded-full p-3 mr-4">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a4 4 0 118 0v4m-4 8a2 2 0 11-4 0m4 0a2 2 0 104 0m-4 0V9a2 2 0 014 0v4"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900">Personalized Quotes</h3>
+            <p class="text-gray-600">We'll prepare customized quotes from top NZ providers based on your needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="mt-8 pt-6 border-t">
+        <div class="bg-blue-50 rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <h3 class="font-semibold text-gray-900">Need to reach us?</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Our team is available Monday to Friday, 9am - 5pm
+          </p>
+          <div class="space-y-2 text-gray-600">
+            <p>✉️ support@healthinsurancecomparison.co.nz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust Indicators -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+      <div class="bg-white rounded-lg p-6 text-center shadow-md">
+        <svg class="w-8 h-8 text-blue-600 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+        </svg>
+        <h3 class="font-semibold text-gray-900">Licensed Advisors</h3>
+        <p class="text-sm text-gray-600">FSP Registered</p>
+      </div>
+      <div class="bg-white rounded-lg p-6 text-center shadow-md">
+        <svg class="w-8 h-8 text-blue-600 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+        <h3 class="font-semibold text-gray-900">No Obligation</h3>
+        <p class="text-sm text-gray-600">Free Consultation</p>
+      </div>
+      <div class="bg-white rounded-lg p-6 text-center shadow-md">
+        <svg class="w-8 h-8 text-blue-600 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+        </svg>
+        <h3 class="font-semibold text-gray-900">Top Providers</h3>
+        <p class="text-sm text-gray-600">Best Coverage Options</p>
+      </div>
+    </div>
+
+    <!-- Additional Resources -->
+    <div class="text-center mb-12">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">While You Wait</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <a
+          href="/guides/best-health-insurance"
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all text-left block"
+        >
+          <h3 class="font-semibold text-gray-900 mb-2">Insurance Guide</h3>
+          <p class="text-gray-600 text-sm mb-4">Learn about different types of coverage and what might suit you best.</p>
+          <span class="text-blue-600 flex items-center text-sm">
+            Read More 
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </span>
+        </a>
+        <a
+          href="/faq"
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all text-left block"
+        >
+          <h3 class="font-semibold text-gray-900 mb-2">Common Questions</h3>
+          <p class="text-gray-600 text-sm mb-4">Find answers to frequently asked questions about health insurance.</p>
+          <span class="text-blue-600 flex items-center text-sm">
+            View FAQs 
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Related Articles -->
+    <div class="mb-12">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Related Articles You Might Find Helpful</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <a
+          href="/blog/understanding-health-insurance"
+          class="group bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all block"
+        >
+          <div class="relative overflow-hidden rounded-lg mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&h=400"
+              alt="Understanding Health Insurance"
+              class="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">Understanding Health Insurance in NZ</h3>
+          <p class="text-gray-600 text-sm">A comprehensive guide to health insurance basics and coverage options.</p>
+        </a>
+
+        <a
+          href="/blog/save-on-premiums"
+          class="group bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all block"
+        >
+          <div class="relative overflow-hidden rounded-lg mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&h=400"
+              alt="Save on Premiums"
+              class="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">10 Ways to Save on Premiums</h3>
+          <p class="text-gray-600 text-sm">Smart strategies to reduce your health insurance costs without compromising coverage.</p>
+        </a>
+
+        <a
+          href="/blog/comparing-providers"
+          class="group bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all block"
+        >
+          <div class="relative overflow-hidden rounded-lg mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&h=400"
+              alt="Comparing Providers"
+              class="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">Comparing Health Insurance Providers</h3>
+          <p class="text-gray-600 text-sm">An in-depth look at NZ's top health insurance providers and their offerings.</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Simple Footer -->
+    <footer class="mt-16 pt-8 border-t border-gray-200">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+            <span class="ml-2 text-xl font-bold text-gray-900">Health Insurance Comparison</span>
+          </div>
+          <p class="text-sm text-gray-600">
+            Helping New Zealanders find the right health insurance coverage.
+          </p>
+        </div>
+        <div class="text-right">
+          <div class="space-y-2">
+            <div class="flex items-center justify-end text-sm text-gray-600">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+              <a href="/privacy" class="hover:text-blue-600">Privacy Policy</a>
+            </div>
+            <div class="flex items-center justify-end text-sm text-gray-600">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+              <a href="/terms" class="hover:text-blue-600">Terms of Service</a>
+            </div>
+            <p class="text-sm text-gray-500">
+              © 2025 Health Insurance Comparison
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Google tag (gtag.js) event -->
+    <script>
+      gtag('event', 'conversion_event_submit_lead_form', {
+        // <event_parameters>
+      });
+    </script>
+  </div>
+</body>
+</html>

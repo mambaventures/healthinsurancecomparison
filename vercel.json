@@ -1,0 +1,104 @@
+{
+  "redirects": [
+    {
+      "source": "/contact-us",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/post/health-coverage-after-50-in-nz",
+      "destination": "/guides/seniors",
+      "permanent": true
+    },
+    {
+      "source": "/post/young-professionals-health-insurance",
+      "destination": "/guides/young-professionals",
+      "permanent": true
+    },
+    {
+      "source": "/post/comparison-guide-2024",
+      "destination": "/compare",
+      "permanent": true
+    },
+    {
+      "source": "/uncategorized",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/author",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/author/admin",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/category/uncategorized",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/advertiser-disclosure",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/asb",
+      "destination": "/reviews/southern-cross",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/aa",
+      "destination": "/reviews/aia",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/tower",
+      "destination": "/reviews/southern-cross",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/state",
+      "destination": "/reviews/southern-cross",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/cove",
+      "destination": "/reviews/southern-cross",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/ami",
+      "destination": "/reviews/southern-cross",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# Force HTTPS and non-www canonical URLs
+http://healthinsurancecomparison.co.nz/* https://healthinsurancecomparison.co.nz/:splat 301!
+http://www.healthinsurancecomparison.co.nz/* https://healthinsurancecomparison.co.nz/:splat 301!
+https://www.healthinsurancecomparison.co.nz/* https://healthinsurancecomparison.co.nz/:splat 301!
+
+# Legacy URL redirects
+/contact-us /contact 301
+/post/health-coverage-after-50-in-nz /guides/seniors 301
+/post/young-professionals-health-insurance /guides/young-professionals 301
+/post/comparison-guide-2024 /compare 301
+/reviews/asb /reviews/southern-cross 301
+/reviews/aa /reviews/aia 301
+/reviews/tower /reviews/southern-cross 301  
+/reviews/state /reviews/southern-cross 301
+/reviews/cove /reviews/southern-cross 301
+/reviews/ami /reviews/southern-cross 301
+/advertiser-disclosure /terms 301
+/advertiser-disclosure/ /terms 301
+/author/admin /about 301
+/author /about 301
+/author/ /about 301
+/category/uncategorized /blog 301
+/category/uncategorized/ /blog 301
+/uncategorized /blog 301
+/uncategorized/ /blog 301
+
+# Handle trailing slashes
+/reviews/southern-cross/ /reviews/southern-cross 301
+/reviews/partners-life/ /reviews/partners-life 301
+/reviews/nib/ /reviews/nib 301
+/blog/ /blog 301
+/reviews/ /reviews 301
+/guides/ /guides 301
+
+# Catch all for SPA
+/* /index.html 200
