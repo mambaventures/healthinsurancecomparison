@@ -165,8 +165,8 @@ function App() {
 
               {/* Navigation Links */}
               <div className="lg:col-span-3">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  {/* Quick Links */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                  {/* Company */}
                   <div>
                     <h4 className="text-lg font-semibold mb-4">Company</h4>
                     <ul className="space-y-2">
@@ -178,25 +178,39 @@ function App() {
                     </ul>
                   </div>
 
-                  {/* Insurance Guides */}
+                  {/* Compare & Tools */}
                   <div>
-                    <h4 className="text-lg font-semibold mb-4">Insurance Guides</h4>
+                    <h4 className="text-lg font-semibold mb-4">Compare & Tools</h4>
                     <ul className="space-y-2">
-                      <li><Link to="/guides/medical-insurance" className="text-gray-400 hover:text-white">Medical Insurance</Link></li>
-                      <li><Link to="/guides/hospital-cover" className="text-gray-400 hover:text-white">Hospital Cover</Link></li>
-                      <li><Link to="/guides/seniors" className="text-gray-400 hover:text-white">Seniors Guide</Link></li>
-                      <li><Link to="/guides/young-professionals" className="text-gray-400 hover:text-white">Young Professionals</Link></li>
+                      <li><Link to="/compare" className="text-gray-400 hover:text-white">Compare Plans</Link></li>
+                      <li><Link to="/quotes" className="text-gray-400 hover:text-white">Get Quotes</Link></li>
+                      <li><Link to="/reviews" className="text-gray-400 hover:text-white">Provider Reviews</Link></li>
+                      <li><Link to="/guides" className="text-gray-400 hover:text-white">Insurance Guides</Link></li>
+                      <li><Link to="/blog" className="text-gray-400 hover:text-white">Blog</Link></li>
                     </ul>
                   </div>
 
-                  {/* Provider Reviews */}
+                  {/* Popular Guides */}
                   <div>
-                    <h4 className="text-lg font-semibold mb-4">Provider Reviews</h4>
+                    <h4 className="text-lg font-semibold mb-4">Popular Guides</h4>
+                    <ul className="space-y-2">
+                      <li><Link to="/cheapest-health-insurance-nz" className="text-gray-400 hover:text-white">Cheapest Insurance</Link></li>
+                      <li><Link to="/students-health-insurance" className="text-gray-400 hover:text-white">Students</Link></li>
+                      <li><Link to="/foreigners-health-insurance" className="text-gray-400 hover:text-white">Foreigners & Expats</Link></li>
+                      <li><Link to="/guides/seniors" className="text-gray-400 hover:text-white">Seniors Guide</Link></li>
+                      <li><Link to="/private-health-insurance" className="text-gray-400 hover:text-white">Private Health</Link></li>
+                    </ul>
+                  </div>
+
+                  {/* Top Providers */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-4">Top Providers</h4>
                     <ul className="space-y-2">
                       <li><Link to="/reviews/southern-cross" className="text-gray-400 hover:text-white">Southern Cross</Link></li>
                       <li><Link to="/reviews/nib" className="text-gray-400 hover:text-white">nib</Link></li>
                       <li><Link to="/reviews/aia" className="text-gray-400 hover:text-white">AIA</Link></li>
                       <li><Link to="/reviews/partners-life" className="text-gray-400 hover:text-white">Partners Life</Link></li>
+                      <li><Link to="/reviews/accuro" className="text-gray-400 hover:text-white">Accuro</Link></li>
                     </ul>
                   </div>
                 </div>
