@@ -437,8 +437,8 @@ function Quotes() {
               <div className="flex justify-center items-center gap-1 sm:gap-6 overflow-x-auto">
                 {[
                   {
-                    name: "Chubb Insurance",
-                    logo: "https://logo.clearbit.com/chubb.co.nz"
+                    name: "Southern Cross",
+                    logo: "https://logo.clearbit.com/southerncross.co.nz"
                   },
                   {
                     name: "nib Insurance",
@@ -449,8 +449,8 @@ function Quotes() {
                     logo: "https://logo.clearbit.com/aia.co.nz"
                   },
                   {
-                    name: "Partners Life",
-                    logo: "https://logo.clearbit.com/partnerslife.co.nz"
+                    name: "Accuro",
+                    logo: "https://logo.clearbit.com/accuro.co.nz"
                   }
                 ].map(provider => (
                   <div key={provider.name} className="flex items-center justify-center h-10 sm:h-20 min-w-[70px] sm:min-w-[80px] flex-shrink-0">
