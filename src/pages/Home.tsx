@@ -110,11 +110,11 @@ function Home() {
               <p className="text-blue-200 mb-6">Trusted by leading NZ providers</p>
               <div className="flex flex-wrap justify-center items-center gap-8 opacity-80">
                 {[
-                  { name: "Southern Cross", logo: "/logos/southern-cross.png" },
-                  { name: "nib", logo: "/logos/nib.png" },
-                  { name: "AIA", logo: "/logos/AIA.png" },
-                  { name: "Partners Life", logo: "/logos/PartnersLife_logo.png" },
-                  { name: "Accuro", logo: "/logos/accuro.png" }
+                  { name: "Southern Cross", logo: "https://logo.clearbit.com/southerncross.co.nz" },
+                  { name: "nib", logo: "https://logo.clearbit.com/nib.co.nz" },
+                  { name: "AIA", logo: "https://logo.clearbit.com/aia.co.nz" },
+                  { name: "Partners Life", logo: "https://logo.clearbit.com/partnerslife.co.nz" },
+                  { name: "Accuro", logo: "https://logo.clearbit.com/accuro.co.nz" }
                 ].map(provider => (
                   <div key={provider.name} className="bg-white/10 rounded-lg p-4 h-16 flex items-center justify-center min-w-[120px]">
                     <img 
@@ -349,7 +349,7 @@ function Home() {
               {[
                 {
                   provider: "Southern Cross",
-                  logo: "/logos/southern-cross.png",
+                  logo: "https://logo.clearbit.com/southerncross.co.nz",
                   rating: 4.8,
                   premium: "$45",
                   coverAmount: "$50,000",
@@ -358,7 +358,7 @@ function Home() {
                 },
                 {
                   provider: "nib",
-                  logo: "/logos/nib.png", 
+                  logo: "https://logo.clearbit.com/nib.co.nz", 
                   rating: 4.6,
                   premium: "$39",
                   coverAmount: "$40,000",
@@ -367,7 +367,7 @@ function Home() {
                 },
                 {
                   provider: "AIA",
-                  logo: "/logos/AIA.png",
+                  logo: "https://logo.clearbit.com/aia.co.nz",
                   rating: 4.7,
                   premium: "$52",
                   coverAmount: "$60,000",
@@ -376,7 +376,7 @@ function Home() {
                 },
                 {
                   provider: "Partners Life",
-                  logo: "/logos/PartnersLife_logo.png",
+                  logo: "https://logo.clearbit.com/partnerslife.co.nz",
                   rating: 4.6,
                   premium: "$49",
                   coverAmount: "$50,000",
@@ -385,7 +385,7 @@ function Home() {
                 },
                 {
                   provider: "Accuro",
-                  logo: "/logos/accuro.png",
+                  logo: "https://logo.clearbit.com/accuro.co.nz",
                   rating: 4.5,
                   premium: "$42",
                   coverAmount: "$35,000",
@@ -394,7 +394,7 @@ function Home() {
                 },
                 {
                   provider: "UniMed",
-                  logo: "/logos/unimed.png",
+                  logo: "https://logo.clearbit.com/unimed.co.nz",
                   rating: 4.4,
                   premium: "$44",
                   coverAmount: "$40,000",

@@ -438,19 +438,19 @@ function Quotes() {
                 {[
                   {
                     name: "Chubb Insurance",
-                    logo: "/logos/chubb.jpg"
+                    logo: "https://logo.clearbit.com/chubb.co.nz"
                   },
                   {
                     name: "nib Insurance",
-                    logo: "/logos/nib.png"
+                    logo: "https://logo.clearbit.com/nib.co.nz"
                   },
                   {
                     name: "AIA Insurance",
-                    logo: "/logos/AIA.png"
+                    logo: "https://logo.clearbit.com/aia.co.nz"
                   },
                   {
                     name: "Partners Life",
-                    logo: "/logos/PartnersLife_logo.png"
+                    logo: "https://logo.clearbit.com/partnerslife.co.nz"
                   }
                 ].map(provider => (
                   <div key={provider.name} className="flex items-center justify-center h-10 sm:h-20 min-w-[70px] sm:min-w-[80px] flex-shrink-0">
@@ -531,19 +531,19 @@ function Quotes() {
               {[
                 {
                   name: "Southern Cross",
-                  logo: "/logos/southern-cross.png"
+                  logo: "https://logo.clearbit.com/southerncross.co.nz"
                 },
                 {
                   name: "nib Insurance",
-                  logo: "/logos/nib.png"
+                  logo: "https://logo.clearbit.com/nib.co.nz"
                 },
                 {
                   name: "AIA Insurance",
-                  logo: "/logos/AIA.png"
+                  logo: "https://logo.clearbit.com/aia.co.nz"
                 },
                 {
                   name: "Partners Life",
-                  logo: "/logos/PartnersLife_logo.png"
+                  logo: "https://logo.clearbit.com/partnerslife.co.nz"
                 }
               ].map(provider => (
                 <div key={provider.name} className="bg-white rounded-lg p-2 sm:p-4 flex items-center justify-center h-8 sm:h-16 min-w-[70px] sm:min-w-[80px] flex-shrink-0 hover:shadow-md transition-shadow">
