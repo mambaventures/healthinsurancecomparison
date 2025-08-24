@@ -33,7 +33,7 @@ function QuotesThankYou() {
                 <p className="text-gray-600 mt-1">Here's what you can expect</p>
               </div>
               <img 
-                src="https://github.com/mambaventures/healthinsurancecomparison/blob/02b4a9140412acccb2098457e896198814ee45c0/main/logos/legacy.png?raw=true"
+                src="https://github.com/mambaventures/healthinsurancecomparison/blob/02b4a9140412acccb2098457e896198814ee45c0/logos/legacy.png?raw=true"
                 alt="Legacy Group Logo"
                 className="h-12 object-contain"
               />
@@ -144,7 +144,7 @@ function QuotesThankYou() {
               >
                 <div className="relative overflow-hidden rounded-lg mb-4">
                   <img
-                    src="/main/images/family-healthcare.jpg"
+                    src="/images/family-healthcare.jpg"
                     alt="Understanding Health Insurance"
                     className="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-300"
                   />
@@ -159,7 +159,7 @@ function QuotesThankYou() {
               >
                 <div className="relative overflow-hidden rounded-lg mb-4">
                   <img
-                    src="/main/images/savings-piggybank.jpg"
+                    src="/images/savings-piggybank.jpg"
                     alt="Save on Premiums"
                     className="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-300"
                   />
@@ -174,7 +174,7 @@ function QuotesThankYou() {
               >
                 <div className="relative overflow-hidden rounded-lg mb-4">
                   <img
-                    src="/main/images/medical-checkup.jpg"
+                    src="/images/medical-checkup.jpg"
                     alt="Comparing Providers"
                     className="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-300"
                   />

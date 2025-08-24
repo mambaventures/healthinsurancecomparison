@@ -103,7 +103,7 @@ function BestHealthInsuranceGuide() {
                   <div className="flex items-center">
                     <div className="bg-yellow-400 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">1</div>
                     <img 
-                      src="/main/logos/southern-cross.png" 
+                      src="/logos/southern-cross.png" 
                       alt="Southern Cross logo" 
                       className="h-12 w-auto mr-4"
                     />
@@ -161,7 +161,7 @@ function BestHealthInsuranceGuide() {
                   <div className="flex items-center">
                     <div className="bg-gray-400 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">2</div>
                     <img 
-                      src="/main/logos/AIA.png" 
+                      src="/logos/AIA.png" 
                       alt="AIA logo" 
                       className="h-12 w-auto mr-4"
                     />
@@ -219,7 +219,7 @@ function BestHealthInsuranceGuide() {
                   <div className="flex items-center">
                     <div className="bg-orange-400 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">3</div>
                     <img 
-                      src="/main/logos/nib.png" 
+                      src="/logos/nib.png" 
                       alt="nib logo" 
                       className="h-12 w-auto mr-4"
                     />
@@ -380,7 +380,7 @@ function BestHealthInsuranceGuide() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">🏆 Best Overall Value</h3>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
-                    <img src="/main/logos/southern-cross.png" alt="Southern Cross" className="h-10 w-auto mr-4" />
+                    <img src="/logos/southern-cross.png" alt="Southern Cross" className="h-10 w-auto mr-4" />
                     <div>
                       <p className="font-semibold">Southern Cross Wellbeing One</p>
                       <p className="text-sm text-gray-600">Perfect balance of coverage and cost</p>
@@ -397,7 +397,7 @@ function BestHealthInsuranceGuide() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">💰 Best Budget Option</h3>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
-                    <img src="/main/logos/nib.png" alt="nib" className="h-10 w-auto mr-4" />
+                    <img src="/logos/nib.png" alt="nib" className="h-10 w-auto mr-4" />
                     <div>
                       <p className="font-semibold">nib Basic Hospital Cover</p>
                       <p className="text-sm text-gray-600">Essential coverage at an affordable price</p>
@@ -414,7 +414,7 @@ function BestHealthInsuranceGuide() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">🌟 Best Premium Coverage</h3>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
-                    <img src="/main/logos/AIA.png" alt="AIA" className="h-10 w-auto mr-4" />
+                    <img src="/logos/AIA.png" alt="AIA" className="h-10 w-auto mr-4" />
                     <div>
                       <p className="font-semibold">AIA Vitality Health Plus</p>
                       <p className="text-sm text-gray-600">Comprehensive coverage with wellness rewards</p>
@@ -431,7 +431,7 @@ function BestHealthInsuranceGuide() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">👨‍👩‍👧‍👦 Best for Families</h3>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
-                    <img src="/main/logos/southern-cross.png" alt="Southern Cross" className="h-10 w-auto mr-4" />
+                    <img src="/logos/southern-cross.png" alt="Southern Cross" className="h-10 w-auto mr-4" />
                     <div>
                       <p className="font-semibold">Southern Cross Wellbeing Two</p>
                       <p className="text-sm text-gray-600">No excess for children, comprehensive family benefits</p>
@@ -448,7 +448,7 @@ function BestHealthInsuranceGuide() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">📱 Best Digital Experience</h3>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
-                    <img src="/main/logos/nib.png" alt="nib" className="h-10 w-auto mr-4" />
+                    <img src="/logos/nib.png" alt="nib" className="h-10 w-auto mr-4" />
                     <div>
                       <p className="font-semibold">nib Premium Hospital Cover</p>
                       <p className="text-sm text-gray-600">Leading digital platform and mobile app</p>

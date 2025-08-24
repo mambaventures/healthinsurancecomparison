@@ -43,7 +43,7 @@ function SouthernCrossReview() {
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-center mb-6">
                 <img 
-                  src="/main/logos/southern-cross.png" 
+                  src="/logos/southern-cross.png" 
                   alt="Southern Cross logo" 
                   className="h-16 w-auto mr-6"
                 />
@@ -241,10 +241,10 @@ function SouthernCrossReview() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Compare with Other Providers</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { name: "nib", logo: "/main/logos/nib.png", slug: "nib" },
-                { name: "AIA", logo: "/main/logos/AIA.png", slug: "aia" },
-                { name: "Partners Life", logo: "/main/logos/PartnersLife_logo.png", slug: "partners-life" },
-                { name: "Accuro", logo: "/main/logos/accuro.png", slug: "accuro" }
+                { name: "nib", logo: "/logos/nib.png", slug: "nib" },
+                { name: "AIA", logo: "/logos/AIA.png", slug: "aia" },
+                { name: "Partners Life", logo: "/logos/PartnersLife_logo.png", slug: "partners-life" },
+                { name: "Accuro", logo: "/logos/accuro.png", slug: "accuro" }
               ].map(provider => (
                 <Link
                   key={provider.slug}

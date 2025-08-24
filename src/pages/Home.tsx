@@ -110,11 +110,11 @@ function Home() {
               <p className="text-blue-200 mb-6">Trusted by leading NZ providers</p>
               <div className="flex flex-wrap justify-center items-center gap-8 opacity-80">
                 {[
-                  { name: "Southern Cross", logo: "/main/logos/southern-cross.png" },
-                  { name: "nib", logo: "/main/logos/nib.png" },
-                  { name: "AIA", logo: "/main/logos/AIA.png" },
-                  { name: "Partners Life", logo: "/main/logos/PartnersLife_logo.png" },
-                  { name: "Accuro", logo: "/main/logos/accuro.png" }
+                  { name: "Southern Cross", logo: "/logos/southern-cross.png" },
+                  { name: "nib", logo: "/logos/nib.png" },
+                  { name: "AIA", logo: "/logos/AIA.png" },
+                  { name: "Partners Life", logo: "/logos/PartnersLife_logo.png" },
+                  { name: "Accuro", logo: "/logos/accuro.png" }
                 ].map(provider => (
                   <div key={provider.name} className="bg-white/10 rounded-lg p-4 h-16 flex items-center justify-center min-w-[120px]">
                     <img 
@@ -349,7 +349,7 @@ function Home() {
               {[
                 {
                   provider: "Southern Cross",
-                  logo: "/main/logos/southern-cross.png",
+                  logo: "/logos/southern-cross.png",
                   rating: 4.8,
                   premium: "$45",
                   coverAmount: "$50,000",
@@ -358,7 +358,7 @@ function Home() {
                 },
                 {
                   provider: "nib",
-                  logo: "/main/logos/nib.png", 
+                  logo: "/logos/nib.png", 
                   rating: 4.6,
                   premium: "$39",
                   coverAmount: "$40,000",
@@ -367,7 +367,7 @@ function Home() {
                 },
                 {
                   provider: "AIA",
-                  logo: "/main/logos/AIA.png",
+                  logo: "/logos/AIA.png",
                   rating: 4.7,
                   premium: "$52",
                   coverAmount: "$60,000",
@@ -376,7 +376,7 @@ function Home() {
                 },
                 {
                   provider: "Partners Life",
-                  logo: "/main/logos/PartnersLife_logo.png",
+                  logo: "/logos/PartnersLife_logo.png",
                   rating: 4.6,
                   premium: "$49",
                   coverAmount: "$50,000",
@@ -385,7 +385,7 @@ function Home() {
                 },
                 {
                   provider: "Accuro",
-                  logo: "/main/logos/accuro.png",
+                  logo: "/logos/accuro.png",
                   rating: 4.5,
                   premium: "$42",
                   coverAmount: "$35,000",
@@ -394,7 +394,7 @@ function Home() {
                 },
                 {
                   provider: "UniMed",
-                  logo: "/main/logos/unimed.png",
+                  logo: "/logos/unimed.png",
                   rating: 4.4,
                   premium: "$44",
                   coverAmount: "$40,000",
@@ -606,42 +606,42 @@ function Home() {
                 {
                   title: "Is Health Insurance Worth It?",
                   description: "An in-depth analysis of health insurance value, costs, and benefits for New Zealand families.",
-                  image: "/main/images/family-healthcare.jpg",
+                  image: "/images/family-healthcare.jpg",
                   readTime: "7 min read",
                   link: "/blog/understanding-health-insurance"
                 },
                 {
                   title: "How to Choose the Right Health Insurance Plan",
                   description: "Expert guide to selecting the best health insurance coverage for your needs and budget.",
-                  image: "/main/images/medical-checkup.jpg",
+                  image: "/images/medical-checkup.jpg",
                   readTime: "8 min read",
                   link: "/blog/comparing-providers"
                 },
                 {
                   title: "Understanding Health Insurance Waiting Periods",
                   description: "Everything you need to know about waiting periods, coverage start dates, and immediate cover options.",
-                  image: "/main/images/business-meeting.jpg",
+                  image: "/images/business-meeting.jpg",
                   readTime: "6 min read",
                   link: "/blog/mental-health-coverage"
                 },
                 {
                   title: "Health Insurance for Students in New Zealand",
                   description: "Complete guide for students including university requirements, affordable plans, and student discounts.",
-                  image: "/main/images/healthcare-costs.jpg",
+                  image: "/images/healthcare-costs.jpg",
                   readTime: "10 min read",
                   link: "/blog/student-health-insurance-nz"
                 },
                 {
                   title: "Common Health Insurance Mistakes to Avoid",
                   description: "Don't make these critical mistakes when choosing health insurance coverage.",
-                  image: "/main/images/savings-piggybank.jpg",
+                  image: "/images/savings-piggybank.jpg",
                   readTime: "5 min read",
                   link: "/blog/save-on-premiums"
                 },
                 {
                   title: "Health Insurance for Foreigners in NZ",
                   description: "Complete guide for expats, visitors and foreign residents including visa requirements and provider options.",
-                  image: "/main/images/blog-healthcare.jpg",
+                  image: "/images/blog-healthcare.jpg",
                   readTime: "8 min read",
                   link: "/blog/health-insurance-foreigners-new-zealand"
                 }

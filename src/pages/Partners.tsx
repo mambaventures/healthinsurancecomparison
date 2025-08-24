@@ -91,7 +91,7 @@ function Partners() {
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center mb-4">
                   <img 
-                    src="https://github.com/mambaventures/healthinsurancecomparison/blob/02b4a9140412acccb2098457e896198814ee45c0/main/logos/legacy.png?raw=true"
+                    src="https://github.com/mambaventures/healthinsurancecomparison/blob/02b4a9140412acccb2098457e896198814ee45c0/logos/legacy.png?raw=true"
                     alt="Legacy Group Logo"
                     className="h-12 object-contain mr-4"
                   />

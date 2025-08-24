@@ -20,7 +20,7 @@ const blogPosts: BlogPost[] = [
     excerpt: 'Complete guide to health insurance for foreigners living in New Zealand. Learn about eligibility, costs, best providers, and how to get coverage as a non-resident.',
     date: '2025-08-24',
     readTime: '8 min read',
-    image: '/main/images/blog-healthcare.jpg',
+    image: '/images/blog-healthcare.jpg',
     category: 'Audience Guide'
   },
   {
@@ -29,7 +29,7 @@ const blogPosts: BlogPost[] = [
     excerpt: 'Everything students need to know about health insurance in New Zealand. Compare affordable plans, university requirements, and student discounts.',
     date: '2025-08-24',
     readTime: '10 min read',
-    image: '/main/images/healthcare-costs.jpg',
+    image: '/images/healthcare-costs.jpg',
     category: 'Audience Guide'
   },
   {
@@ -38,7 +38,7 @@ const blogPosts: BlogPost[] = [
     excerpt: 'Detailed comparison of all major health insurance companies in New Zealand. Compare coverage, pricing, customer service and find the best provider.',
     date: '2025-08-24',
     readTime: '12 min read',
-    image: '/main/images/medical-checkup.jpg',
+    image: '/images/medical-checkup.jpg',
     category: 'Comparison'
   },
   {
@@ -56,7 +56,7 @@ const blogPosts: BlogPost[] = [
     excerpt: 'Navigate the complexities of health insurance in New Zealand with our comprehensive guide covering everything from basic terms to advanced coverage options.',
     date: '2025-02-15',
     readTime: '8 min read',
-    image: '/main/images/family-healthcare.jpg',
+    image: '/images/family-healthcare.jpg',
     category: 'Insurance Guide'
   },
   {
@@ -65,7 +65,7 @@ const blogPosts: BlogPost[] = [
     excerpt: "An in-depth comparison of New Zealand's leading health insurance providers, including coverage options, prices, and customer satisfaction ratings.",
     date: '2025-02-10',
     readTime: '10 min read',
-    image: '/main/images/medical-checkup.jpg',
+    image: '/images/medical-checkup.jpg',
     category: 'Comparison'
   },
   {
@@ -74,7 +74,7 @@ const blogPosts: BlogPost[] = [
     excerpt: 'Discover practical tips and strategies to reduce your health insurance premiums while maintaining comprehensive coverage.',
     date: '2025-02-05',
     readTime: '6 min read',
-    image: '/main/images/savings-piggybank.jpg',
+    image: '/images/savings-piggybank.jpg',
     category: 'Tips & Advice'
   },
   {
@@ -83,7 +83,7 @@ const blogPosts: BlogPost[] = [
     excerpt: 'Learn about mental health coverage options in New Zealand health insurance plans and how to choose the right coverage for your needs.',
     date: '2025-01-30',
     readTime: '7 min read',
-    image: '/main/images/business-meeting.jpg',
+    image: '/images/business-meeting.jpg',
     category: 'Coverage'
   }
 ];

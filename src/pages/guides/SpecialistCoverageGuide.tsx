@@ -483,7 +483,7 @@ function SpecialistCoverageGuide() {
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center">
-                    <img src="/main/logos/southern-cross.png" alt="Southern Cross" className="h-12 w-auto mr-4" />
+                    <img src="/logos/southern-cross.png" alt="Southern Cross" className="h-12 w-auto mr-4" />
                     <div>
                       <h3 className="text-xl font-semibold text-gray-900">Southern Cross</h3>
                       <p className="text-gray-600">Largest specialist network</p>
@@ -535,7 +535,7 @@ function SpecialistCoverageGuide() {
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center">
-                    <img src="/main/logos/AIA.png" alt="AIA" className="h-12 w-auto mr-4" />
+                    <img src="/logos/AIA.png" alt="AIA" className="h-12 w-auto mr-4" />
                     <div>
                       <h3 className="text-xl font-semibold text-gray-900">AIA</h3>
                       <p className="text-gray-600">Best for mental health specialists</p>
@@ -587,7 +587,7 @@ function SpecialistCoverageGuide() {
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center">
-                    <img src="/main/logos/nib.png" alt="nib" className="h-12 w-auto mr-4" />
+                    <img src="/logos/nib.png" alt="nib" className="h-12 w-auto mr-4" />
                     <div>
                       <h3 className="text-xl font-semibold text-gray-900">nib</h3>
                       <p className="text-gray-600">Best digital specialist services</p>

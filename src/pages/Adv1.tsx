@@ -107,19 +107,19 @@ function Adv1() {
             {[
               {
                 name: "Chubb Insurance",
-                logo: "/main/logos/chubb.jpg"
+                logo: "/logos/chubb.jpg"
               },
               {
                 name: "nib Insurance",
-                logo: "/main/logos/nib.png"
+                logo: "/logos/nib.png"
               },
               {
                 name: "AIA Insurance",
-                logo: "/main/logos/AIA.png"
+                logo: "/logos/AIA.png"
               },
               {
                 name: "Partners Life",
-                logo: "/main/logos/PartnersLife_logo.png"
+                logo: "/logos/PartnersLife_logo.png"
               }
             ].map(provider => (
               <div

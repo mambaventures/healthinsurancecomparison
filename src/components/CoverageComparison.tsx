@@ -107,7 +107,17 @@ const CoverageComparison: React.FC = () => {
                 <th key={plan.provider} className="text-center py-3 px-4">
                   <div className="flex items-center justify-center mb-2">
                     <img
-                      src={`https://logo.clearbit.com/${plan.provider.toLowerCase().replace(' ', '')}.co.nz`}
+                      src={(() => {
+                        const logoMap: { [key: string]: string } = {
+                          'Southern Cross': '/logos/southern-cross.png',
+                          'nib': '/logos/nib.png',
+                          'AIA': '/logos/AIA.png',
+                          'Partners Life': '/logos/PartnersLife_logo.png',
+                          'Accuro': '/logos/accuro.png',
+                          'UniMed': '/logos/unimed.png'
+                        };
+                        return logoMap[plan.provider] || '/logos/default.png';
+                      })()}
                       alt={`${plan.provider} logo`}
                       className="w-8 h-8 object-contain"
                     />

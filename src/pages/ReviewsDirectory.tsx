@@ -17,21 +17,21 @@ function ReviewsDirectory() {
       slug: "nib", 
       rating: 4.6,
       description: "Innovative health insurance with flexible plans and digital services",
-      logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/4a058346a1493099f50a6440ad785bb567faaafe/main/logos/nib.png?raw=true"
+      logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/4a058346a1493099f50a6440ad785bb567faaafe/logos/nib.png?raw=true"
     },
     {
       name: "AIA",
       slug: "aia",
       rating: 4.7,
       description: "Comprehensive health coverage with Vitality wellness program",
-      logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/43218b7c29f7e5081ecaefad96816bab4fa8b126/main/logos/AIA.png?raw=true"
+      logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/43218b7c29f7e5081ecaefad96816bab4fa8b126/logos/AIA.png?raw=true"
     },
     {
       name: "Partners Life",
       slug: "partners-life",
       rating: 4.6,
       description: "Innovative insurance solutions with comprehensive trauma coverage",
-      logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/f364b3eb97e017c6d77190cbc71e27c01942bd4d/main/logos/PartnersLife_logo.png?raw=true"
+      logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/f364b3eb97e017c6d77190cbc71e27c01942bd4d/logos/PartnersLife_logo.png?raw=true"
     },
     {
       name: "Accuro",

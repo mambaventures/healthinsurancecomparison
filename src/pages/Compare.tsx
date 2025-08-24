@@ -59,7 +59,7 @@ const insurancePlans: InsurancePlan[] = [
   {
     id: "nib-1",
     provider: "nib",
-    logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/4a058346a1493099f50a6440ad785bb567faaafe/main/logos/nib.png?raw=true",
+    logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/4a058346a1493099f50a6440ad785bb567faaafe/logos/nib.png?raw=true",
     planName: "Essential Health Plus",
     monthlyPrice: 39.99,
     rating: 4.5,
@@ -86,7 +86,7 @@ const insurancePlans: InsurancePlan[] = [
   {
     id: "aia-1",
     provider: "AIA",
-    logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/43218b7c29f7e5081ecaefad96816bab4fa8b126/main/logos/AIA.png?raw=true",
+    logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/43218b7c29f7e5081ecaefad96816bab4fa8b126/logos/AIA.png?raw=true",
     planName: "Real Health",
     monthlyPrice: 52.99,
     rating: 4.7,
@@ -113,7 +113,7 @@ const insurancePlans: InsurancePlan[] = [
   {
     id: "partners-life-1",
     provider: "Partners Life",
-    logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/f364b3eb97e017c6d77190cbc71e27c01942bd4d/main/logos/PartnersLife_logo.png?raw=true",
+    logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/f364b3eb97e017c6d77190cbc71e27c01942bd4d/logos/PartnersLife_logo.png?raw=true",
     planName: "Private Hospital Cover",
     monthlyPrice: 49.99,
     rating: 4.6,

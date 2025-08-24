@@ -42,7 +42,7 @@ function NibReview() {
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-center mb-6">
                 <img 
-                  src="/main/logos/nib.png" 
+                  src="/logos/nib.png" 
                   alt="nib logo" 
                   className="h-16 w-auto mr-6"
                 />
@@ -241,10 +241,10 @@ function NibReview() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Compare with Other Providers</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { name: "Southern Cross", logo: "/main/logos/southern-cross.png", slug: "southern-cross" },
-                { name: "AIA", logo: "/main/logos/AIA.png", slug: "aia" },
-                { name: "Partners Life", logo: "/main/logos/PartnersLife_logo.png", slug: "partners-life" },
-                { name: "Accuro", logo: "/main/logos/accuro.png", slug: "accuro" }
+                { name: "Southern Cross", logo: "/logos/southern-cross.png", slug: "southern-cross" },
+                { name: "AIA", logo: "/logos/AIA.png", slug: "aia" },
+                { name: "Partners Life", logo: "/logos/PartnersLife_logo.png", slug: "partners-life" },
+                { name: "Accuro", logo: "/logos/accuro.png", slug: "accuro" }
               ].map(provider => (
                 <Link
                   key={provider.slug}

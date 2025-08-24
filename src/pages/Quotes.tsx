@@ -438,19 +438,19 @@ function Quotes() {
                 {[
                   {
                     name: "Chubb Insurance",
-                    logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/627f40917793961fe5e21630602e70f1ce67ab66/main/logos/chubb.jpg?raw=true"
+                    logo: "/logos/chubb.jpg"
                   },
                   {
                     name: "nib Insurance",
-                    logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/4a058346a1493099f50a6440ad785bb567faaafe/main/logos/nib.png?raw=true"
+                    logo: "/logos/nib.png"
                   },
                   {
                     name: "AIA Insurance",
-                    logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/43218b7c29f7e5081ecaefad96816bab4fa8b126/main/logos/AIA.png?raw=true"
+                    logo: "/logos/AIA.png"
                   },
                   {
                     name: "Partners Life",
-                    logo: "https://github.com/mambaventures/healthinsurancecomparison/blob/f364b3eb97e017c6d77190cbc71e27c01942bd4d/main/logos/PartnersLife_logo.png?raw=true"
+                    logo: "/logos/PartnersLife_logo.png"
                   }
                 ].map(provider => (
                   <div key={provider.name} className="flex items-center justify-center h-10 sm:h-20 min-w-[70px] sm:min-w-[80px] flex-shrink-0">
@@ -531,19 +531,19 @@ function Quotes() {
               {[
                 {
                   name: "Southern Cross",
-                  logo: "/main/logos/southern-cross.png"
+                  logo: "/logos/southern-cross.png"
                 },
                 {
                   name: "nib Insurance",
-                  logo: "/main/logos/nib.png"
+                  logo: "/logos/nib.png"
                 },
                 {
                   name: "AIA Insurance",
-                  logo: "/main/logos/AIA.png"
+                  logo: "/logos/AIA.png"
                 },
                 {
                   name: "Partners Life",
-                  logo: "/main/logos/PartnersLife_logo.png"
+                  logo: "/logos/PartnersLife_logo.png"
                 }
               ].map(provider => (
                 <div key={provider.name} className="bg-white rounded-lg p-2 sm:p-4 flex items-center justify-center h-8 sm:h-16 min-w-[70px] sm:min-w-[80px] flex-shrink-0 hover:shadow-md transition-shadow">

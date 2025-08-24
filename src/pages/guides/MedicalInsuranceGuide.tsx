@@ -326,7 +326,7 @@ function MedicalInsuranceGuide() {
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center">
                     <img 
-                      src="/main/logos/southern-cross.png" 
+                      src="/logos/southern-cross.png" 
                       alt="Southern Cross logo" 
                       className="h-12 w-auto mr-4"
                     />
@@ -372,7 +372,7 @@ function MedicalInsuranceGuide() {
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center">
                     <img 
-                      src="/main/logos/nib.png" 
+                      src="/logos/nib.png" 
                       alt="nib logo" 
                       className="h-12 w-auto mr-4"
                     />
@@ -418,7 +418,7 @@ function MedicalInsuranceGuide() {
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center">
                     <img 
-                      src="/main/logos/AIA.png" 
+                      src="/logos/AIA.png" 
                       alt="AIA logo" 
                       className="h-12 w-auto mr-4"
                     />
