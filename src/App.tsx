@@ -45,6 +45,8 @@ import ReviewsDirectory from './pages/ReviewsDirectory';
 import GuidesDirectory from './pages/GuidesDirectory';
 import Partners from './pages/Partners';
 import CheapestHealthInsurance from './pages/CheapestHealthInsurance';
+import WhatIsHealthInsurance from './pages/what-is-health-insurance';
+import HealthInsuranceFAQ from './pages/health-insurance-faq';
 
 function App() {
   const location = useLocation();
@@ -120,6 +122,10 @@ function App() {
         <Route path="/guides/young-professionals" element={<YoungProfessionalsGuide />} />
         <Route path="/adv-1" element={<Adv1 />} />
         
+        {/* New FAQ and Information Pages */}
+        <Route path="/what-is-health-insurance" element={<WhatIsHealthInsurance />} />
+        <Route path="/health-insurance-faq" element={<HealthInsuranceFAQ />} />
+        
         {/* Partners page */}
         <Route path="/partners" element={<Partners />} />
         
@@ -175,6 +181,7 @@ function App() {
                       <li><Link to="/partners" className="text-gray-400 hover:text-white">Partners</Link></li>
                       <li><Link to="/contact" className="text-gray-400 hover:text-white">Contact Us</Link></li>
                       <li><Link to="/faq" className="text-gray-400 hover:text-white">FAQ</Link></li>
+                      <li><Link to="/health-insurance-faq" className="text-gray-400 hover:text-white">Health Insurance FAQ</Link></li>
                     </ul>
                   </div>
 
@@ -186,6 +193,7 @@ function App() {
                       <li><Link to="/quotes" className="text-gray-400 hover:text-white">Get Quotes</Link></li>
                       <li><Link to="/reviews" className="text-gray-400 hover:text-white">Provider Reviews</Link></li>
                       <li><Link to="/guides" className="text-gray-400 hover:text-white">Insurance Guides</Link></li>
+                      <li><Link to="/what-is-health-insurance" className="text-gray-400 hover:text-white">What is Health Insurance</Link></li>
                       <li><Link to="/blog" className="text-gray-400 hover:text-white">Blog</Link></li>
                     </ul>
                   </div>
