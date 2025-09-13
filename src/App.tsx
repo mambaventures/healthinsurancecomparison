@@ -48,6 +48,19 @@ import CheapestHealthInsurance from './pages/CheapestHealthInsurance';
 import WhatIsHealthInsurance from './pages/what-is-health-insurance';
 import HealthInsuranceFAQ from './pages/health-insurance-faq';
 
+// Profession-specific pages
+import TeachersHealthInsurance from './pages/professions/TeachersHealthInsurance';
+import NursesHealthInsurance from './pages/professions/NursesHealthInsurance';
+import ContractorsHealthInsurance from './pages/professions/ContractorsHealthInsurance';
+import FarmersHealthInsurance from './pages/professions/FarmersHealthInsurance';
+import SelfEmployedHealthInsurance from './pages/professions/SelfEmployedHealthInsurance';
+import TradiesHealthInsurance from './pages/professions/TradiesHealthInsurance';
+
+// Money/cost-focused pages
+import HealthInsuranceCostCalculator from './pages/tools/HealthInsuranceCostCalculator';
+import HealthInsuranceTaxDeductions from './pages/HealthInsuranceTaxDeductions';
+import CheapestFamilyHealthInsurance from './pages/CheapestFamilyHealthInsurance';
+
 function App() {
   const location = useLocation();
   const hideFooter = location.pathname === '/quotes' || location.pathname === '/quotes/thank-you';
@@ -151,7 +164,20 @@ function App() {
         {/* Directory pages */}
         <Route path="/reviews" element={<ReviewsDirectory />} />
         <Route path="/guides" element={<GuidesDirectory />} />
-        
+
+        {/* Profession-specific pages */}
+        <Route path="/health-insurance-teachers-nz" element={<TeachersHealthInsurance />} />
+        <Route path="/health-insurance-nurses-nz" element={<NursesHealthInsurance />} />
+        <Route path="/health-insurance-contractors-nz" element={<ContractorsHealthInsurance />} />
+        <Route path="/health-insurance-farmers-nz" element={<FarmersHealthInsurance />} />
+        <Route path="/health-insurance-self-employed-nz" element={<SelfEmployedHealthInsurance />} />
+        <Route path="/health-insurance-tradies-nz" element={<TradiesHealthInsurance />} />
+
+        {/* Money/cost-focused pages */}
+        <Route path="/health-insurance-cost-calculator-nz" element={<HealthInsuranceCostCalculator />} />
+        <Route path="/health-insurance-tax-deductions-nz" element={<HealthInsuranceTaxDeductions />} />
+        <Route path="/cheapest-family-health-insurance-nz" element={<CheapestFamilyHealthInsurance />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
 
