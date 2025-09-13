@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Shield, Heart, DollarSign, Users, CheckCircle, Search, ArrowRight, Calendar, Clock, Star, ArrowUpRight } from 'lucide-react';
+import { Heart, DollarSign, Users, CheckCircle, Search, ArrowRight, Calendar, Clock, Star, ArrowUpRight } from 'lucide-react';
 import Breadcrumbs from './components/Breadcrumbs';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -62,7 +62,7 @@ function App() {
         <nav className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:py-4">
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center">
-              <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-blue-600" />
+              <img src="/logo.png" alt="Health Insurance Comparison" className="h-6 w-6 sm:h-8 sm:w-8" />
               <span className="ml-2 text-base sm:text-xl font-bold text-gray-900">Health Insurance Comparison 🇳🇿</span>
             </Link>
             {!isQuotesPage && !isQuotesThankYouPage && !isAdv1Page && (
@@ -163,7 +163,7 @@ function App() {
               {/* Company Info */}
               <div className="lg:col-span-1">
                 <div className="flex items-center mb-4">
-                  <Shield className="h-8 w-8 text-blue-400" />
+                  <img src="/logo.png" alt="Health Insurance Comparison" className="h-8 w-8" />
                   <span className="ml-2 text-xl font-bold">Health Insurance Comparison</span>
                 </div>
                 <p className="text-gray-400 mb-4">Making health insurance simple and accessible for all New Zealanders.</p>
