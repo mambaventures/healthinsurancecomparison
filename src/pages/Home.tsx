@@ -73,7 +73,7 @@ function Home() {
               Best Health Insurance NZ 2025 - Compare Plans & Get Quotes
             </h1>
             <p className="text-xl sm:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Find affordable health cover from $25/month. Compare top NZ providers instantly.
+              Compare health insurance from New Zealand's leading providers. Get personalized quotes instantly.
             </p>
             
             {/* Key Stats */}
@@ -84,7 +84,7 @@ function Home() {
               </div>
               <div className="flex items-center bg-blue-600/30 px-6 py-3 rounded-full">
                 <DollarSign className="w-6 h-6 mr-2" />
-                <span className="text-lg font-semibold">From $25/month</span>
+                <span className="text-lg font-semibold">Get Personalized Quotes</span>
               </div>
               <div className="flex items-center bg-blue-600/30 px-6 py-3 rounded-full">
                 <Heart className="w-6 h-6 mr-2" />
@@ -144,20 +144,20 @@ function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">What is Health Insurance?</h3>
                 <p className="text-gray-600 mb-6">
-                  Health insurance provides a lump sum payment to help cover medical costs and related expenses.
+                  Health insurance helps cover medical expenses not fully funded by the public health system, including private hospital stays, specialist consultations, and elective surgeries.
                 </p>
                 <ul className="text-left space-y-2 mb-6">
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600">Coverage from $5,000 to $50,000</span>
+                    <span className="text-gray-600">Coverage varies by plan and provider</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600">No medical tests required</span>
+                    <span className="text-gray-600">Medical underwriting may apply</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600">Immediate accidental death cover</span>
+                    <span className="text-gray-600">Waiting periods typically apply</span>
                   </li>
                 </ul>
                 <Link to="/guides/medical-insurance" className="text-blue-600 hover:text-blue-700 font-semibold">
@@ -255,9 +255,9 @@ function Home() {
                 <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <DollarSign className="w-10 h-10 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Affordable Cover</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Competitive Rates</h3>
                 <p className="text-gray-600">
-                  Plans from $25/month with flexible payment options
+                  Compare quotes from multiple providers to find competitive rates
                 </p>
               </div>
               
@@ -351,54 +351,54 @@ function Home() {
                   provider: "Southern Cross",
                   logo: "https://logo.clearbit.com/southerncross.co.nz",
                   rating: 4.8,
-                  premium: "$45",
-                  coverAmount: "$50,000",
-                  features: ["Level premiums available", "NZ-based support", "Family cover options"],
+                  premium: "Get Quote",
+                  coverAmount: "Varies",
+                  features: ["New Zealand's largest health insurer", "Wellbeing One & Wellbeing Starter plans", "Comprehensive provider network"],
                   slug: "southern-cross"
                 },
                 {
                   provider: "nib",
-                  logo: "https://logo.clearbit.com/nib.co.nz", 
+                  logo: "https://logo.clearbit.com/nib.co.nz",
                   rating: 4.6,
-                  premium: "$39",
-                  coverAmount: "$40,000",
-                  features: ["No waiting period", "Fixed premiums", "24/7 claims support"],
+                  premium: "Get Quote",
+                  coverAmount: "Varies",
+                  features: ["Easy Health & Ultimate Health plans", "Digital-first approach", "Flexible coverage options"],
                   slug: "nib"
                 },
                 {
                   provider: "AIA",
                   logo: "https://logo.clearbit.com/aia.co.nz",
                   rating: 4.7,
-                  premium: "$52",
-                  coverAmount: "$60,000",
-                  features: ["Premium freeze option", "Multi-policy discounts", "Online claims portal"],
+                  premium: "Get Quote",
+                  coverAmount: "Varies",
+                  features: ["AIA Vitality wellness program", "Health + Life insurance bundles", "Rewards for healthy living"],
                   slug: "aia"
                 },
                 {
                   provider: "Partners Life",
                   logo: "https://logo.clearbit.com/partnerslife.co.nz",
                   rating: 4.6,
-                  premium: "$49",
-                  coverAmount: "$50,000",
-                  features: ["Worldwide coverage", "Guaranteed acceptance", "24/7 online support"],
+                  premium: "Get Quote",
+                  coverAmount: "Varies",
+                  features: ["Simple application process", "Fixed premium options", "Comprehensive medical cover"],
                   slug: "partners-life"
                 },
                 {
                   provider: "Accuro",
                   logo: "https://logo.clearbit.com/accuro.co.nz",
                   rating: 4.5,
-                  premium: "$42",
-                  coverAmount: "$35,000",
-                  features: ["Specialised for 50+", "Quick online application", "Dedicated seniors support"],
+                  premium: "Get Quote",
+                  coverAmount: "Varies",
+                  features: ["Specializes in over 50s cover", "No medical tests for some plans", "Guaranteed acceptance options"],
                   slug: "accuro"
                 },
                 {
                   provider: "UniMed",
                   logo: "https://logo.clearbit.com/unimed.co.nz",
                   rating: 4.4,
-                  premium: "$44",
-                  coverAmount: "$40,000",
-                  features: ["AA Member discounts", "Immediate accidental cover", "NZ-based service"],
+                  premium: "Get Quote",
+                  coverAmount: "Varies",
+                  features: ["AA member discounts available", "Range of health insurance options", "New Zealand owned and operated"],
                   slug: "unimed"
                 }
               ].map((provider, index) => (
@@ -422,12 +422,12 @@ function Home() {
                     
                     <div className="text-center">
                       <span className="font-bold text-blue-600">{provider.premium}</span>
-                      <div className="text-xs text-gray-500">per month</div>
+                      {provider.premium !== "Get Quote" && <div className="text-xs text-gray-500">per month</div>}
                     </div>
-                    
+
                     <div className="text-center">
                       <span className="font-bold text-gray-900">{provider.coverAmount}</span>
-                      <div className="text-xs text-gray-500">cover amount</div>
+                      {provider.coverAmount !== "Varies" && <div className="text-xs text-gray-500">cover amount</div>}
                     </div>
                     
                     <div>
@@ -499,7 +499,7 @@ function Home() {
                 },
                 {
                   question: "How much does health insurance cost in New Zealand?",
-                  answer: "Health insurance premiums vary based on age, coverage level, and provider. Basic plans start from around $25-40 per month, while comprehensive coverage typically ranges from $60-200+ monthly."
+                  answer: "Health insurance premiums vary significantly based on your age, coverage level, health status, and chosen provider. Costs depend on factors like excess amounts, coverage limits, and specific benefits included. It's best to get personalized quotes to understand actual pricing for your situation."
                 },
                 {
                   question: "What's the difference between health insurance and life insurance?",

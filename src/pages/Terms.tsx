@@ -38,17 +38,26 @@ function Terms() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">What We Do</h2>
             <p className="text-gray-600 mb-4">
-              Health Insurance Comparison NZ is a free comparison platform that helps users find and compare health insurance options. We are not an insurance company, financial adviser, or broker.
+              Health Insurance Comparison NZ is a free comparison platform that helps users find and compare health insurance options. We are not an insurance company, licensed financial adviser, or insurance broker under the Insurance (Prudential Supervision) Act 2010 or Financial Markets Conduct Act 2013.
+            </p>
+            <p className="text-gray-600 mb-4">
+              We connect users with licensed third-party providers and brokers who are registered on New Zealand's Financial Service Providers Register (FSP). All quotes are supplied directly by licensed providers, and we may earn a referral commission if you proceed with their services.
             </p>
             <p className="text-gray-600">
-              We connect users with licensed third-party providers and brokers based on the information you provide. Quotes are supplied directly by those parties, and we may earn a referral fee if you proceed with one of their offers.
+              By using our service, you understand that we operate as an intermediary platform and are not responsible for the insurance products, terms, or services provided by third parties.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">No Financial Advice</h2>
+            <p className="text-gray-600 mb-4">
+              The content on this website is for general informational purposes only and does not constitute personalized financial advice under the Financial Advisers Act 2008 or Financial Markets Conduct Act 2013. We do not provide regulated financial advice or recommendations.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Any information provided should not be relied upon as a substitute for independent professional advice. You should consider seeking advice from a licensed financial adviser (FAP licensed) or insurance adviser before making any insurance decisions.
+            </p>
             <p className="text-gray-600">
-              The content on this website is for informational purposes only and does not constitute financial advice. We do not provide personalised recommendations. You should consider seeking independent advice from a licensed financial adviser before making any decisions.
+              We make no representations about the suitability of any insurance product for your individual circumstances.
             </p>
           </section>
 
@@ -66,13 +75,22 @@ function Terms() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Partner Responsibilities</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Third-Party Provider Relationships</h2>
             <p className="text-gray-600 mb-4">
-              We aim to work only with licensed New Zealand health insurance providers and brokers. However, we do not guarantee the accuracy, availability, or suitability of any quote or product provided. Any agreement or engagement with a third-party provider is solely between you and that provider.
+              We work with licensed New Zealand health insurance providers and financial service providers who are registered on the FSP Register and comply with relevant legislation including the Insurance (Prudential Supervision) Act 2010 and Financial Markets Conduct Act 2013.
             </p>
-            <p className="text-gray-600">
-              We are not responsible for the terms, pricing, conduct, or outcomes of third-party services.
+            <p className="text-gray-600 mb-4">
+              We do not guarantee the accuracy, availability, or suitability of any quote, product, or service provided by third parties. Any contractual relationship is solely between you and the relevant licensed provider.
             </p>
+            <p className="text-gray-600 mb-4">
+              We are not responsible for:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 space-y-2 mb-4">
+              <li>The terms, conditions, pricing, or availability of insurance products</li>
+              <li>The conduct, performance, or solvency of insurance providers</li>
+              <li>Claims handling, disputes, or customer service issues with providers</li>
+              <li>Changes to products or pricing after quotes are provided</li>
+            </ul>
           </section>
 
           <section className="mb-8">
@@ -85,23 +103,41 @@ function Terms() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Limitation of Liability</h2>
             <p className="text-gray-600 mb-4">
-              To the fullest extent permitted by law, Health Insurance Comparison NZ, its owners, employees, and affiliates are not liable for:
+              To the fullest extent permitted by New Zealand law, including the Consumer Guarantees Act 1993 and Fair Trading Act 1986, Health Insurance Comparison NZ, its owners, employees, and affiliates limit liability for:
             </p>
             <ul className="list-disc pl-6 text-gray-600 space-y-2 mb-4">
               <li>Any loss or damage resulting from use of this site or reliance on its content</li>
-              <li>Any issues or disputes with third-party providers you are connected to</li>
-              <li>Interruptions, errors, or technical problems on the website</li>
+              <li>Any issues, disputes, or claims with third-party providers</li>
+              <li>Website interruptions, errors, or technical problems</li>
+              <li>Inaccuracy, incompleteness, or currency of information</li>
+              <li>Loss of profits, data, or other consequential damages</li>
+            </ul>
+            <p className="text-gray-600 mb-4">
+              Nothing in these terms excludes or limits liability for:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 space-y-2 mb-4">
+              <li>Death or personal injury caused by negligence</li>
+              <li>Fraudulent misrepresentation</li>
+              <li>Breaches that cannot be excluded under New Zealand law</li>
             </ul>
             <p className="text-gray-600">
-              Our total liability, if any, is limited to the amount paid by you for using this website (which is zero).
+              Where liability cannot be excluded, it is limited to the maximum extent permitted by law.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Governing Law</h2>
-            <p className="text-gray-600">
-              These Terms are governed by the laws of New Zealand. Any disputes arising from the use of our service will be subject to the exclusive jurisdiction of the New Zealand courts.
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Governing Law and Dispute Resolution</h2>
+            <p className="text-gray-600 mb-4">
+              These Terms are governed by and construed in accordance with the laws of New Zealand. Any disputes will be subject to the exclusive jurisdiction of the New Zealand courts.
             </p>
+            <p className="text-gray-600 mb-4">
+              For consumer-related disputes, you may also have rights under the Consumer Guarantees Act 1993 and can contact:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 space-y-2 mb-4">
+              <li>Commerce Commission (Fair Trading Act matters)</li>
+              <li>Financial Markets Authority (licensed provider issues)</li>
+              <li>Insurance & Financial Services Ombudsman (provider disputes)</li>
+            </ul>
           </section>
 
           <section className="mb-8">
@@ -116,7 +152,7 @@ function Terms() {
 
           <section>
             <p className="text-gray-600 italic">
-              Last updated: July 2025
+              Last updated: September 2025
             </p>
           </section>
         </div>

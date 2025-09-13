@@ -204,35 +204,36 @@ function App() {
                     <ul className="space-y-2">
                       <li><Link to="/about" className="text-gray-400 hover:text-white">About Us</Link></li>
                       <li><Link to="/how-it-works" className="text-gray-400 hover:text-white">How It Works</Link></li>
-                      <li><Link to="/partners" className="text-gray-400 hover:text-white">Partners</Link></li>
                       <li><Link to="/contact" className="text-gray-400 hover:text-white">Contact Us</Link></li>
-                      <li><Link to="/faq" className="text-gray-400 hover:text-white">FAQ</Link></li>
-                      <li><Link to="/health-insurance-faq" className="text-gray-400 hover:text-white">Health Insurance FAQ</Link></li>
+                      <li><Link to="/health-insurance-faq" className="text-gray-400 hover:text-white">FAQ</Link></li>
+                      <li><Link to="/terms" className="text-gray-400 hover:text-white">Terms</Link></li>
+                      <li><Link to="/privacy" className="text-gray-400 hover:text-white">Privacy</Link></li>
                     </ul>
                   </div>
 
                   {/* Compare & Tools */}
                   <div>
-                    <h4 className="text-lg font-semibold mb-4">Compare & Tools</h4>
+                    <h4 className="text-lg font-semibold mb-4">Tools & Guides</h4>
                     <ul className="space-y-2">
+                      <li><Link to="/health-insurance-cost-calculator-nz" className="text-gray-400 hover:text-white">Cost Calculator</Link></li>
+                      <li><Link to="/health-insurance-tax-deductions-nz" className="text-gray-400 hover:text-white">Tax Deductions</Link></li>
+                      <li><Link to="/cheapest-family-health-insurance-nz" className="text-gray-400 hover:text-white">Cheapest Family Plans</Link></li>
                       <li><Link to="/compare" className="text-gray-400 hover:text-white">Compare Plans</Link></li>
-                      <li><Link to="/quotes" className="text-gray-400 hover:text-white">Get Quotes</Link></li>
-                      <li><Link to="/reviews" className="text-gray-400 hover:text-white">Provider Reviews</Link></li>
-                      <li><Link to="/guides" className="text-gray-400 hover:text-white">Insurance Guides</Link></li>
-                      <li><Link to="/what-is-health-insurance" className="text-gray-400 hover:text-white">What is Health Insurance</Link></li>
+                      <li><Link to="/guides" className="text-gray-400 hover:text-white">All Guides</Link></li>
                       <li><Link to="/blog" className="text-gray-400 hover:text-white">Blog</Link></li>
                     </ul>
                   </div>
 
-                  {/* Popular Guides */}
+                  {/* By Profession */}
                   <div>
-                    <h4 className="text-lg font-semibold mb-4">Popular Guides</h4>
+                    <h4 className="text-lg font-semibold mb-4">By Profession</h4>
                     <ul className="space-y-2">
-                      <li><Link to="/cheapest-health-insurance-nz" className="text-gray-400 hover:text-white">Cheapest Insurance</Link></li>
-                      <li><Link to="/students-health-insurance" className="text-gray-400 hover:text-white">Students</Link></li>
-                      <li><Link to="/foreigners-health-insurance" className="text-gray-400 hover:text-white">Foreigners & Expats</Link></li>
-                      <li><Link to="/guides/seniors" className="text-gray-400 hover:text-white">Seniors Guide</Link></li>
-                      <li><Link to="/private-health-insurance" className="text-gray-400 hover:text-white">Private Health</Link></li>
+                      <li><Link to="/health-insurance-teachers-nz" className="text-gray-400 hover:text-white">Teachers</Link></li>
+                      <li><Link to="/health-insurance-nurses-nz" className="text-gray-400 hover:text-white">Nurses</Link></li>
+                      <li><Link to="/health-insurance-tradies-nz" className="text-gray-400 hover:text-white">Tradies</Link></li>
+                      <li><Link to="/health-insurance-self-employed-nz" className="text-gray-400 hover:text-white">Self-Employed</Link></li>
+                      <li><Link to="/health-insurance-contractors-nz" className="text-gray-400 hover:text-white">Contractors</Link></li>
+                      <li><Link to="/health-insurance-farmers-nz" className="text-gray-400 hover:text-white">Farmers</Link></li>
                     </ul>
                   </div>
 
@@ -245,6 +246,7 @@ function App() {
                       <li><Link to="/reviews/aia" className="text-gray-400 hover:text-white">AIA</Link></li>
                       <li><Link to="/reviews/partners-life" className="text-gray-400 hover:text-white">Partners Life</Link></li>
                       <li><Link to="/reviews/accuro" className="text-gray-400 hover:text-white">Accuro</Link></li>
+                      <li><Link to="/quotes" className="text-gray-400 hover:text-white">Get Quotes</Link></li>
                     </ul>
                   </div>
                 </div>
