@@ -8,13 +8,14 @@ function SouthernCrossReview() {
   const insuranceProduct = {
     name: "Wellbeing Starter",
     provider: "Southern Cross",
-    description: "Comprehensive health insurance plan with hospital and surgical coverage, specialist consultations, and diagnostic tests.",
-    monthlyPrice: 45.99,
+    description: "Entry-level health insurance plan designed to cover major health concerns like cancer and cardiac surgery.",
+    monthlyPrice: "Get Quote",
     benefits: [
-      "No excess for children",
-      "Unlimited hospital cover",
-      "Specialist consultations",
-      "Free health screening"
+      "$500,000 surgical cover",
+      "$100,000 cardiac cover",
+      "$60,000 cancer care including $10,000 non-Pharmac drugs",
+      "$40,000 prophylactic treatment allowance",
+      "75% GP and physiotherapy visits up to $150/year"
     ],
     url: "https://healthinsurancecomparison.co.nz/reviews/southern-cross"
   };
@@ -88,15 +89,15 @@ function SouthernCrossReview() {
               <div className="space-y-4">
                 <p className="flex items-center gap-2">
                   <AlertCircle className="w-5 h-5 text-blue-500" />
-                  <span>Monthly Premium: ${insuranceProduct.monthlyPrice}</span>
+                  <span>Pricing: Contact for personalized quote</span>
                 </p>
                 <p className="text-gray-700">{insuranceProduct.description}</p>
                 <div className="bg-green-50 p-4 rounded-lg">
                   <p className="text-green-800 font-semibold">Great Value For:</p>
                   <ul className="text-green-700 text-sm mt-2">
-                    <li>• Families with children</li>
-                    <li>• Comprehensive coverage seekers</li>
-                    <li>• Long-term health planning</li>
+                    <li>• Young individuals, couples and families</li>
+                    <li>• Entry-level health insurance seekers</li>
+                    <li>• Major health concern coverage</li>
                   </ul>
                 </div>
               </div>
@@ -110,10 +111,10 @@ function SouthernCrossReview() {
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Hospital Cover</h3>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Private hospital accommodation</li>
-                  <li>• Surgical procedures</li>
-                  <li>• Specialist fees</li>
-                  <li>• Theatre and anaesthetist costs</li>
+                  <li>• $500,000 surgical cover</li>
+                  <li>• $100,000 cardiac cover</li>
+                  <li>• $60,000 cancer care</li>
+                  <li>• $3,000 skin surgery</li>
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -126,12 +127,12 @@ function SouthernCrossReview() {
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Additional Benefits</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Limitations</h3>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• No excess for children</li>
-                  <li>• Extensive provider network</li>
-                  <li>• 24/7 support</li>
-                  <li>• Not-for-profit benefits</li>
+                  <li>• No gynaecology, urology, orthopaedics cover</li>
+                  <li>• Limited day-to-day benefits</li>
+                  <li>• 6-month treatment window for consultations</li>
+                  <li>• Entry-level plan restrictions</li>
                 </ul>
               </div>
             </div>
@@ -146,19 +147,19 @@ function SouthernCrossReview() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Largest provider network in NZ</span>
+                    <span className="text-green-700">New Zealand's largest health insurer</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Not-for-profit organization</span>
+                    <span className="text-green-700">Not-for-profit organization serving 900,000 members</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Excellent customer service</span>
+                    <span className="text-green-700">Over 60 years of experience</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Comprehensive coverage options</span>
+                    <span className="text-green-700">Affordable entry-level option</span>
                   </li>
                 </ul>
               </div>
@@ -167,15 +168,15 @@ function SouthernCrossReview() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <AlertCircle className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-red-700">Higher premiums for some plans</span>
+                    <span className="text-red-700">Limited specialist coverage</span>
                   </li>
                   <li className="flex items-start">
                     <AlertCircle className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-red-700">Waiting periods for pre-existing conditions</span>
+                    <span className="text-red-700">No cover for restricted specialties</span>
                   </li>
                   <li className="flex items-start">
                     <AlertCircle className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-red-700">Complex plan structures</span>
+                    <span className="text-red-700">Limited day-to-day healthcare benefits</span>
                   </li>
                 </ul>
               </div>
@@ -195,8 +196,8 @@ function SouthernCrossReview() {
                   </div>
                   <span className="ml-2 text-gray-600">5/5</span>
                 </div>
-                <p className="text-gray-700 mb-4">"Excellent service and comprehensive coverage. The no excess for children is fantastic."</p>
-                <p className="text-sm text-gray-500">- Emma K., Auckland</p>
+                <p className="text-gray-700 mb-4">"Southern Cross provides reliable coverage as New Zealand's most established health insurer."</p>
+                <p className="text-sm text-gray-500">- Verified Customer Review</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center mb-4">

@@ -6,15 +6,16 @@ import InsuranceProductSchema from '../../components/InsuranceProductSchema';
 
 function AIAReview() {
   const insuranceProduct = {
-    name: "Real Health",
+    name: "Health Insurance with AIA Vitality",
     provider: "AIA",
-    description: "Comprehensive health insurance plan with mental health support, alternative therapies, and Vitality rewards program.",
-    monthlyPrice: 52.99,
+    description: "Health insurance plan featuring the science-backed AIA Vitality wellness program with premium discounts and rewards for healthy living.",
+    monthlyPrice: "Get Quote + $11.50/month Vitality fee",
     benefits: [
-      "Mental health support",
-      "Alternative therapies",
-      "Vitality rewards program",
-      "Cancer care coverage"
+      "10% initial premium discount",
+      "Up to $260/year in Active Rewards",
+      "Apple Watch benefit (returning 2025)",
+      "Airpoints Dollars or Woolworths vouchers",
+      "Science-backed wellness program"
     ],
     url: "https://healthinsurancecomparison.co.nz/reviews/aia"
   };
@@ -51,15 +52,16 @@ function AIAReview() {
                   <h2 className="text-2xl font-bold text-gray-900">About AIA</h2>
                   <div className="flex items-center mt-2">
                     <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                    <span className="ml-1 font-semibold">4.7/5</span>
-                    <span className="ml-2 text-gray-600">(1,100 reviews)</span>
+                    <span className="ml-1 font-semibold">$11.9M</span>
+                    <span className="ml-2 text-gray-600">vouchers redeemed</span>
                   </div>
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                AIA distinguishes itself through the AIA Vitality program, which rewards healthy lifestyle choices. 
-                Their comprehensive coverage options include both traditional health insurance and innovative wellness 
-                benefits, with a strong focus on mental health and preventive care.
+                AIA New Zealand is New Zealand's largest life insurer, offering health insurance with the innovative
+                AIA Vitality wellness program. AIA Vitality is a science-backed program that provides guidance, tools,
+                and rewards for healthy living, with over 20,000 members completing health assessments showing
+                significant health improvements including 20% moving to healthy BMI and 50% improving blood pressure.
               </p>
             </div>
           </div>
@@ -88,15 +90,15 @@ function AIAReview() {
               <div className="space-y-4">
                 <p className="flex items-center gap-2">
                   <AlertCircle className="w-5 h-5 text-blue-500" />
-                  <span>Monthly Premium: ${insuranceProduct.monthlyPrice}</span>
+                  <span>Pricing: Health insurance quote + $11.50/month Vitality</span>
                 </p>
                 <p className="text-gray-700">{insuranceProduct.description}</p>
                 <div className="bg-green-50 p-4 rounded-lg">
                   <p className="text-green-800 font-semibold">Great Value For:</p>
                   <ul className="text-green-700 text-sm mt-2">
-                    <li>• Health-conscious individuals</li>
-                    <li>• Mental health support seekers</li>
-                    <li>• Wellness program enthusiasts</li>
+                    <li>• Health-conscious individuals seeking rewards</li>
+                    <li>• People wanting premium discounts</li>
+                    <li>• Those interested in wellness programs</li>
                   </ul>
                 </div>
               </div>
@@ -119,19 +121,19 @@ function AIAReview() {
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Vitality Program</h3>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Fitness tracking rewards</li>
-                  <li>• Health screening benefits</li>
-                  <li>• Lifestyle coaching</li>
-                  <li>• Premium discounts</li>
+                  <li>• 10% initial premium discount</li>
+                  <li>• Up to 15,000 points and $260/year rewards</li>
+                  <li>• Apple Watch benefit (returning 2025)</li>
+                  <li>• Bronze to Platinum status levels</li>
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Mental Health</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Rewards & Benefits</h3>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Counseling sessions</li>
-                  <li>• Psychiatric consultations</li>
-                  <li>• Stress management programs</li>
-                  <li>• 24/7 mental health support</li>
+                  <li>• 25 Airpoints Dollars or $25 Woolworths vouchers</li>
+                  <li>• Health assessments with proven results</li>
+                  <li>• Over $11.9M in vouchers redeemed by members</li>
+                  <li>• Monthly membership fee: $11.50 (incl. GST)</li>
                 </ul>
               </div>
             </div>
@@ -146,19 +148,19 @@ function AIAReview() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Unique Vitality wellness program</span>
+                    <span className="text-green-700">Science-backed Vitality wellness program</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Excellent mental health coverage</span>
+                    <span className="text-green-700">Proven health improvement results</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Rewards for healthy lifestyle</span>
+                    <span className="text-green-700">Real rewards: $260/year + Airpoints/vouchers</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Strong international presence</span>
+                    <span className="text-green-700">New Zealand's largest life insurer</span>
                   </li>
                 </ul>
               </div>
@@ -167,15 +169,15 @@ function AIAReview() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <AlertCircle className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-red-700">Higher premiums than basic plans</span>
+                    <span className="text-red-700">Additional $11.50/month Vitality fee</span>
                   </li>
                   <li className="flex items-start">
                     <AlertCircle className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-red-700">Complex Vitality program requirements</span>
+                    <span className="text-red-700">Requires active engagement for maximum benefits</span>
                   </li>
                   <li className="flex items-start">
                     <AlertCircle className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-red-700">Limited provider network in rural areas</span>
+                    <span className="text-red-700">Apple Watch benefit currently unavailable until 2025</span>
                   </li>
                 </ul>
               </div>

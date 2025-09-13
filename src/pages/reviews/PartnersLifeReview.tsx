@@ -6,15 +6,16 @@ import InsuranceProductSchema from '../../components/InsuranceProductSchema';
 
 function PartnersLifeReview() {
   const insuranceProduct = {
-    name: "Private Hospital Cover",
+    name: "Private Medical Cover",
     provider: "Partners Life",
-    description: "Innovative health insurance plan with comprehensive trauma coverage and digital claims process.",
-    monthlyPrice: 49.99,
+    description: "Comprehensive health insurance providing quick access to private medical treatment with tailored coverage options.",
+    monthlyPrice: "Get Quote (18% increase April 2025)",
     benefits: [
-      "Comprehensive trauma coverage",
-      "Innovative policy features",
-      "Digital claims process",
-      "Specialist consultations"
+      "Quick access to private medical sector",
+      "Choice of treatment providers",
+      "89% claims payout rate",
+      "Tailored coverage options",
+      "Hospital Cash Cover available"
     ],
     url: "https://healthinsurancecomparison.co.nz/reviews/partners-life"
   };
@@ -51,15 +52,16 @@ function PartnersLifeReview() {
                   <h2 className="text-2xl font-bold text-gray-900">About Partners Life</h2>
                   <div className="flex items-center mt-2">
                     <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                    <span className="ml-1 font-semibold">4.6/5</span>
-                    <span className="ml-2 text-gray-600">(850 reviews)</span>
+                    <span className="ml-1 font-semibold">89%</span>
+                    <span className="ml-2 text-gray-600">claims payout rate</span>
                   </div>
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                Partners Life is known for innovative insurance solutions with comprehensive trauma coverage. 
-                They offer flexible policy features and a digital-first approach to claims processing, 
-                making them popular with tech-savvy customers seeking modern insurance solutions.
+                Partners Life began as a New Zealand start-up around a decade ago and has grown to become one of
+                New Zealand's most trusted health, life, and business insurance providers. They pay out around 89%
+                of claims each year and offer tailored insurance solutions including Private Medical Cover with
+                Specialists and Tests options.
               </p>
             </div>
           </div>
@@ -88,15 +90,15 @@ function PartnersLifeReview() {
               <div className="space-y-4">
                 <p className="flex items-center gap-2">
                   <AlertCircle className="w-5 h-5 text-blue-500" />
-                  <span>Monthly Premium: ${insuranceProduct.monthlyPrice}</span>
+                  <span>Pricing: Contact for quote (18% increase April 2025)</span>
                 </p>
                 <p className="text-gray-700">{insuranceProduct.description}</p>
                 <div className="bg-green-50 p-4 rounded-lg">
                   <p className="text-green-800 font-semibold">Great Value For:</p>
                   <ul className="text-green-700 text-sm mt-2">
-                    <li>• Digital-first users</li>
-                    <li>• Trauma coverage seekers</li>
-                    <li>• Innovation-focused customers</li>
+                    <li>• Those seeking tailored coverage</li>
+                    <li>• People wanting quick private treatment access</li>
+                    <li>• Customers prioritizing choice of providers</li>
                   </ul>
                 </div>
               </div>
@@ -108,30 +110,30 @@ function PartnersLifeReview() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Coverage Details</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Hospital Cover</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Private Medical Cover</h3>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Private hospital accommodation</li>
-                  <li>• Surgical procedures</li>
-                  <li>• Specialist fees</li>
-                  <li>• Theatre and anaesthetist costs</li>
+                  <li>• Quick access to private medical sector</li>
+                  <li>• Choice of treatment providers</li>
+                  <li>• Specialists and Tests option available</li>
+                  <li>• Coverage in NZ and Australia (worldwide with limitations)</li>
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Digital Services</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Hospital Cash Cover</h3>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Online claims portal</li>
-                  <li>• Mobile app</li>
-                  <li>• Digital policy management</li>
-                  <li>• Fast-track processing</li>
+                  <li>• Cash benefit for hospital admission 3+ nights</li>
+                  <li>• Private or public hospital coverage</li>
+                  <li>• Hospice care included</li>
+                  <li>• Stand-alone or add-on option</li>
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Trauma Coverage</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Additional Products</h3>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Comprehensive trauma benefits</li>
-                  <li>• Critical illness cover</li>
-                  <li>• Rehabilitation support</li>
-                  <li>• Family support services</li>
+                  <li>• Specific Condition Cover</li>
+                  <li>• Trauma Cover (separate product)</li>
+                  <li>• Income Cover (separate product)</li>
+                  <li>• Mix and match policy options</li>
                 </ul>
               </div>
             </div>

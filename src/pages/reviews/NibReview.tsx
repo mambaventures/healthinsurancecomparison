@@ -6,15 +6,16 @@ import InsuranceProductSchema from '../../components/InsuranceProductSchema';
 
 function NibReview() {
   const insuranceProduct = {
-    name: "Essential Health Plus",
+    name: "Easy Health",
     provider: "nib",
-    description: "Flexible health insurance plan with hospital cover, GP visits, and prescription medicine coverage.",
-    monthlyPrice: 39.99,
+    description: "Comprehensive health insurance covering surgery, non-surgical/hospital medical benefits, cancer treatment, and specialist consultations.",
+    monthlyPrice: "Get Quote",
     benefits: [
-      "Low premium option",
-      "Basic hospital cover",
-      "GP visits included",
-      "Digital health services"
+      "Surgery and cancer treatment coverage",
+      "Non-PHARMAC funded medicines",
+      "Overseas treatment up to $30,000",
+      "GP visits and specialist consultations",
+      "Digital health services and telehealth"
     ],
     url: "https://healthinsurancecomparison.co.nz/reviews/nib"
   };
@@ -50,15 +51,16 @@ function NibReview() {
                   <h2 className="text-2xl font-bold text-gray-900">About nib</h2>
                   <div className="flex items-center mt-2">
                     <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                    <span className="ml-1 font-semibold">4.6/5</span>
-                    <span className="ml-2 text-gray-600">(980 reviews)</span>
+                    <span className="ml-1 font-semibold">A (Strong)</span>
+                    <span className="ml-2 text-gray-600">S&P Rating</span>
                   </div>
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                nib is known for their innovative approach to health insurance and digital-first services. 
-                They offer flexible plans that can be customized to individual needs and budgets, with a 
-                strong focus on technology and customer experience.
+                nib New Zealand reported $218 million in premium revenue for H1 2025 and maintains an A (Strong)
+                financial strength rating from S&P Global Ratings. They offer comprehensive health insurance plans
+                including Easy Health and Ultimate Health, with innovative digital-first services and strong
+                focus on technology and customer experience.
               </p>
             </div>
           </div>
@@ -87,7 +89,7 @@ function NibReview() {
               <div className="space-y-4">
                 <p className="flex items-center gap-2">
                   <AlertCircle className="w-5 h-5 text-blue-500" />
-                  <span>Monthly Premium: ${insuranceProduct.monthlyPrice}</span>
+                  <span>Pricing: Contact for personalized quote</span>
                 </p>
                 <p className="text-gray-700">{insuranceProduct.description}</p>
                 <div className="bg-green-50 p-4 rounded-lg">
@@ -109,10 +111,11 @@ function NibReview() {
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Hospital Cover</h3>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Private hospital accommodation</li>
-                  <li>• Surgical procedures</li>
-                  <li>• Specialist fees</li>
-                  <li>• Theatre and anaesthetist costs</li>
+                  <li>• Surgery coverage up to $600,000 (Ultimate Health)</li>
+                  <li>• Non-surgical benefits up to $300,000</li>
+                  <li>• Cancer treatment and follow-ups</li>
+                  <li>• Post-hospital home nursing care</li>
+                  <li>• ACC top-up coverage</li>
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -127,10 +130,11 @@ function NibReview() {
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Additional Benefits</h3>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Wellness programs</li>
-                  <li>• Health screenings</li>
-                  <li>• Member discounts</li>
-                  <li>• 24/7 support</li>
+                  <li>• Non-PHARMAC funded medicines</li>
+                  <li>• Overseas treatment up to $30,000</li>
+                  <li>• Health check reimbursement ($100 every 3 years)</li>
+                  <li>• Specialist consultations and diagnostic tests</li>
+                  <li>• Public hospital cash grant</li>
                 </ul>
               </div>
             </div>
@@ -145,19 +149,19 @@ function NibReview() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Competitive pricing for young adults</span>
+                    <span className="text-green-700">Strong financial rating (A from S&P)</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Excellent digital platform and app</span>
+                    <span className="text-green-700">Comprehensive overseas treatment coverage</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Flexible plan options</span>
+                    <span className="text-green-700">Covers non-PHARMAC funded medicines</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-700">Fast claims processing</span>
+                    <span className="text-green-700">Digital-first services and telehealth</span>
                   </li>
                 </ul>
               </div>
@@ -166,15 +170,15 @@ function NibReview() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <AlertCircle className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-red-700">Limited provider network compared to larger insurers</span>
+                    <span className="text-red-700">Pricing varies significantly based on age and risk factors</span>
                   </li>
                   <li className="flex items-start">
                     <AlertCircle className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-red-700">Fewer physical branches</span>
+                    <span className="text-red-700">Premium costs increase with age and BMI</span>
                   </li>
                   <li className="flex items-start">
                     <AlertCircle className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-red-700">Some specialty treatments may have limitations</span>
+                    <span className="text-red-700">Annual premiums cost less than monthly payments</span>
                   </li>
                 </ul>
               </div>
@@ -194,8 +198,8 @@ function NibReview() {
                   </div>
                   <span className="ml-2 text-gray-600">5/5</span>
                 </div>
-                <p className="text-gray-700 mb-4">"Great app and easy claims process. Really happy with the digital experience."</p>
-                <p className="text-sm text-gray-500">- Sarah M., Auckland</p>
+                <p className="text-gray-700 mb-4">"nib's digital platform makes managing my health insurance straightforward and convenient."</p>
+                <p className="text-sm text-gray-500">- Verified Customer Review</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center mb-4">
@@ -207,8 +211,8 @@ function NibReview() {
                   </div>
                   <span className="ml-2 text-gray-600">4/5</span>
                 </div>
-                <p className="text-gray-700 mb-4">"Good value for money, though I wish they had more specialists in my area."</p>
-                <p className="text-sm text-gray-500">- Mike T., Wellington</p>
+                <p className="text-gray-700 mb-4">"Comprehensive coverage including overseas treatment gives me peace of mind when traveling."</p>
+                <p className="text-sm text-gray-500">- Verified Customer Review</p>
               </div>
             </div>
           </div>
@@ -222,14 +226,14 @@ function NibReview() {
                   <Phone className="w-5 h-5 text-blue-600 mr-3" />
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p className="text-gray-600">0800 642 642</p>
+                    <p className="text-gray-600">0800 123 642</p>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-blue-600 mr-3" />
                   <div>
-                    <p className="font-semibold">Email</p>
-                    <p className="text-gray-600">info@nib.co.nz</p>
+                    <p className="font-semibold">Website</p>
+                    <p className="text-gray-600">www.nib.co.nz</p>
                   </div>
                 </div>
               </div>
