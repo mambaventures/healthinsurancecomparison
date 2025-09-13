@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Wrench, Shield, CheckCircle, AlertTriangle, Calculator, Users, ArrowRight, Clock, DollarSign, Hard Hat } from 'lucide-react';
+import { Wrench, Shield, CheckCircle, AlertTriangle, Calculator, Users, ArrowRight, Clock, DollarSign, HardHat } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 function TradiesHealthInsurance() {
