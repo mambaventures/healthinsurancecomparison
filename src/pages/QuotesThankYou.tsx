@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Phone, Calendar, Clock, Shield, Mail, FileCheck, Lock } from 'lucide-react';
 import SEO from '../components/SEO';
 
+// Declare gtag function for TypeScript
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
+
 function QuotesThankYou() {
+  useEffect(() => {
+    // Fire Google tag lead submission event
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'lead_submission', {
+        // <event_parameters>
+      });
+    }
+  }, []);
+
   return (
     <>
       <SEO
