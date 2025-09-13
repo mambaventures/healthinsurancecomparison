@@ -61,6 +61,22 @@ import HealthInsuranceCostCalculator from './pages/tools/HealthInsuranceCostCalc
 import HealthInsuranceTaxDeductions from './pages/HealthInsuranceTaxDeductions';
 import CheapestFamilyHealthInsurance from './pages/CheapestFamilyHealthInsurance';
 
+// Medical condition-specific pages
+import CancerHealthInsurance from './pages/conditions/CancerHealthInsurance';
+import DiabetesHealthInsurance from './pages/conditions/DiabetesHealthInsurance';
+import MentalHealthInsurance from './pages/conditions/MentalHealthInsurance';
+import PregnancyHealthInsurance from './pages/conditions/PregnancyHealthInsurance';
+import HeartConditionsInsurance from './pages/conditions/HeartConditionsInsurance';
+import PreExistingConditionsInsurance from './pages/conditions/PreExistingConditionsInsurance';
+
+// Educational authority pages
+import HealthInsuranceVsACC from './pages/education/HealthInsuranceVsACC';
+import PrivateVsPublicHealthcare from './pages/education/PrivateVsPublicHealthcare';
+import HealthInsuranceWaitingPeriods from './pages/education/HealthInsuranceWaitingPeriods';
+import HealthInsuranceExcessGuide from './pages/education/HealthInsuranceExcessGuide';
+import HealthInsuranceClaimsProcess from './pages/education/HealthInsuranceClaimsProcess';
+import HealthInsuranceTerminologyGuide from './pages/education/HealthInsuranceTerminologyGuide';
+
 function App() {
   const location = useLocation();
   const hideFooter = location.pathname === '/quotes' || location.pathname === '/quotes/thank-you';
@@ -177,6 +193,22 @@ function App() {
         <Route path="/health-insurance-cost-calculator-nz" element={<HealthInsuranceCostCalculator />} />
         <Route path="/health-insurance-tax-deductions-nz" element={<HealthInsuranceTaxDeductions />} />
         <Route path="/cheapest-family-health-insurance-nz" element={<CheapestFamilyHealthInsurance />} />
+
+        {/* Medical condition-specific pages */}
+        <Route path="/health-insurance-cancer-cover-nz" element={<CancerHealthInsurance />} />
+        <Route path="/health-insurance-diabetes-nz" element={<DiabetesHealthInsurance />} />
+        <Route path="/health-insurance-mental-health-nz" element={<MentalHealthInsurance />} />
+        <Route path="/health-insurance-pregnancy-nz" element={<PregnancyHealthInsurance />} />
+        <Route path="/health-insurance-heart-conditions-nz" element={<HeartConditionsInsurance />} />
+        <Route path="/health-insurance-pre-existing-conditions-nz" element={<PreExistingConditionsInsurance />} />
+
+        {/* Educational authority pages */}
+        <Route path="/health-insurance-vs-acc-nz" element={<HealthInsuranceVsACC />} />
+        <Route path="/private-vs-public-healthcare-nz" element={<PrivateVsPublicHealthcare />} />
+        <Route path="/health-insurance-waiting-periods-explained" element={<HealthInsuranceWaitingPeriods />} />
+        <Route path="/health-insurance-excess-guide-nz" element={<HealthInsuranceExcessGuide />} />
+        <Route path="/health-insurance-claims-process-nz" element={<HealthInsuranceClaimsProcess />} />
+        <Route path="/health-insurance-terminology-guide" element={<HealthInsuranceTerminologyGuide />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
