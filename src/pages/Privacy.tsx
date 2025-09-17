@@ -84,11 +84,16 @@ function Privacy() {
               In accordance with Privacy Principle 11 (Limits on disclosure), we only disclose your personal information in the following circumstances:
             </p>
             <ul className="list-disc pl-6 text-gray-600 space-y-2 mb-4">
-              <li><strong>Licensed insurance providers and brokers</strong> — registered on the Financial Service Providers Register (FSP) to deliver quotes and offers relevant to your needs</li>
+              <li><strong>Licensed insurance providers and brokers</strong> — including Evolve Group Limited (FSP711891) and other licensed providers registered on the Financial Service Providers Register (FSP) to deliver quotes and offers relevant to your needs. We may share your information with one or more of these partners depending on your location, insurance needs, and partner availability</li>
               <li><strong>Authorized service providers</strong> — who help operate our platform under strict confidentiality agreements (e.g., hosting, form handling, analytics)</li>
               <li><strong>Regulators or legal authorities</strong> — when required by law, court order, or to prevent fraud, including Financial Markets Authority or Privacy Commissioner</li>
               <li><strong>Related entities</strong> — within our corporate group, subject to the same privacy protections</li>
             </ul>
+            <div className="bg-yellow-50 rounded-lg p-4 mb-4">
+              <p className="text-sm text-gray-600">
+                <strong>Important Note:</strong> Our partner network may change from time to time to ensure we provide you with the best possible service and coverage options. We only work with licensed providers who meet our strict quality and compliance standards.
+              </p>
+            </div>
             <p className="text-gray-600 mb-4">
               All third parties we work with are required to:
             </p>
@@ -200,6 +205,23 @@ function Privacy() {
             <p className="text-gray-600">
               We encourage you to review this policy periodically to stay informed about how we protect your information.
             </p>
+          </section>
+
+          <section className="mb-8">
+            <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-blue-600">
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">⚠️ Important Disclaimer</h2>
+              <div className="space-y-3 text-sm text-gray-700">
+                <p>
+                  <strong>Information Currency:</strong> The information contained in this Privacy Policy is current as of the "Last updated" date shown below. Our business practices, partner relationships, and data handling procedures may change from time to time, and this policy may not always reflect the most current information.
+                </p>
+                <p>
+                  <strong>Partner Network:</strong> We work with various licensed insurance providers and brokers whose details may change without notice. While we strive to keep our website current, the specific partners mentioned may not represent our complete current network.
+                </p>
+                <p>
+                  <strong>No Warranty:</strong> This Privacy Policy is provided for informational purposes. While we make reasonable efforts to ensure accuracy, we make no warranties about the completeness, reliability, or accuracy of this information.
+                </p>
+              </div>
+            </div>
           </section>
 
           <section>

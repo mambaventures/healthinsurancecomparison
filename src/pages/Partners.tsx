@@ -24,6 +24,11 @@ function Partners() {
           <p className="text-xl text-gray-600">
             At HealthInsuranceComparison.co.nz, we help New Zealanders explore and compare private health insurance by connecting them with trusted insurance experts. We're not an insurer ourselves — instead, we work with licensed third-party providers who can offer personalised quotes and guidance.
           </p>
+          <div className="mt-4 p-4 bg-yellow-50 rounded-lg">
+            <p className="text-sm text-gray-600">
+              <strong>Please note:</strong> Our partner network may change from time to time, and the information displayed may not always reflect our current partnerships. We may work with additional licensed providers not specifically named on this page.
+            </p>
+          </div>
         </header>
 
         <div className="prose prose-blue max-w-none">
@@ -34,7 +39,7 @@ function Partners() {
                 <h2 className="text-2xl font-bold text-gray-900">🔄 How It Works</h2>
               </div>
               <p className="text-gray-700 text-lg">
-                When you complete a quote request on our website, we securely share your information with licensed insurance brokers or providers who may be able to assist with your needs. These professionals are authorised to offer regulated financial advice and health insurance products in New Zealand.
+                When you complete a quote request on our website, we securely share your information with one or more licensed insurance brokers or providers who may be able to assist with your needs. These professionals are authorised to offer regulated financial advice and health insurance products in New Zealand. The specific partner(s) we connect you with may vary depending on your location, needs, and current partner availability.
               </p>
             </div>
           </section>
@@ -86,24 +91,27 @@ function Partners() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">🏢 Our Trusted Partners</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">🏢 Our Key Partners</h2>
+            <div className="mb-6 p-4 bg-blue-50 rounded-lg">
+              <p className="text-gray-700">
+                Below are examples of our key partners. Please note that we may work with additional licensed providers beyond those specifically listed, and our partner network may change over time to best serve our customers' needs.
+              </p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center mb-4">
-                  <img 
-                    src="/logos/legacy.png"
-                    alt="Legacy Group Logo"
-                    className="h-12 object-contain mr-4"
-                  />
+                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                    <span className="text-white font-bold text-lg">E</span>
+                  </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900">Legacy Group</h3>
-                    <p className="text-gray-600">Licensed Insurance Advisors</p>
+                    <h3 className="text-xl font-semibold text-gray-900">Evolve Group Limited</h3>
+                    <p className="text-gray-600">Licensed Financial Advice Provider</p>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center">
                     <Award className="w-5 h-5 text-blue-600 mr-2" />
-                    <span className="text-gray-700">FSP Licensed & Regulated</span>
+                    <span className="text-gray-700">FSP711891 Licensed & Regulated</span>
                   </div>
                   <div className="flex items-center">
                     <Heart className="w-5 h-5 text-blue-600 mr-2" />
@@ -115,7 +123,7 @@ function Partners() {
                   </div>
                 </div>
                 <p className="text-gray-600 mt-4">
-                  Legacy Group is our primary partner for health insurance advice and quotes. Their licensed advisors specialize in helping New Zealanders find the right health coverage for their needs and budget.
+                  Evolve Group Limited (FSP711891) is our primary partner for health insurance advice and quotes. Their licensed advisors specialize in helping New Zealanders find the right health coverage for their needs and budget.
                 </p>
               </div>
 
@@ -492,6 +500,23 @@ function Partners() {
                   Inquire About Partnership
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-orange-500">
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">⚠️ Important Disclaimer</h2>
+              <div className="space-y-3 text-sm text-gray-700">
+                <p>
+                  <strong>Information Currency:</strong> The partner information displayed on this page is current as of the last update and may not reflect our complete current network. Our partner relationships may change from time to time to ensure we provide the best possible service to our customers.
+                </p>
+                <p>
+                  <strong>Partner Network:</strong> We may work with additional licensed insurance providers beyond those specifically named on this page. All partners must meet our strict licensing and quality standards, including FSP registration where applicable.
+                </p>
+                <p>
+                  <strong>Service Flexibility:</strong> The specific partner(s) you are connected with may vary based on your location, insurance needs, partner availability, and other factors at the time of your inquiry.
+                </p>
               </div>
             </div>
           </section>
