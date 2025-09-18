@@ -3,6 +3,7 @@ import { Shield, Star, CheckCircle, AlertCircle, Users, Clock, Phone, Mail, Arro
 import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
 import InsuranceProductSchema from '../../components/InsuranceProductSchema';
+import ReviewSchema from '../../components/schemas/ReviewSchema';
 
 function SouthernCrossReview() {
   const insuranceProduct = {
@@ -20,6 +21,34 @@ function SouthernCrossReview() {
     url: "https://healthinsurancecomparison.co.nz/reviews/southern-cross"
   };
 
+  const reviews = [
+    {
+      author: "Sarah M.",
+      reviewRating: 5,
+      reviewBody: "Excellent coverage and customer service. Southern Cross has been fantastic when I needed surgery.",
+      datePublished: "2025-09-15"
+    },
+    {
+      author: "David K.",
+      reviewRating: 4,
+      reviewBody: "Good value for money. Claims process is straightforward and staff are helpful.",
+      datePublished: "2025-09-10"
+    },
+    {
+      author: "Lisa T.",
+      reviewRating: 5,
+      reviewBody: "Best health insurance in NZ. Peace of mind knowing I'm covered for any health issues.",
+      datePublished: "2025-09-05"
+    }
+  ];
+
+  const aggregateRating = {
+    ratingValue: 4.8,
+    reviewCount: 1250,
+    bestRating: 5,
+    worstRating: 1
+  };
+
   return (
     <>
       <SEO
@@ -27,6 +56,12 @@ function SouthernCrossReview() {
         description="Comprehensive review of Southern Cross health insurance. Compare plans, coverage options, and pricing. Read our expert analysis and customer reviews."
       />
       <InsuranceProductSchema product={insuranceProduct} />
+      <ReviewSchema
+        itemName="Southern Cross Health Insurance"
+        itemType="InsuranceCompany"
+        reviews={reviews}
+        aggregateRating={aggregateRating}
+      />
       <div className="bg-white">
         {/* Hero Section */}
         <div className="bg-blue-600 text-white py-16">

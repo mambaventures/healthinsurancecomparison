@@ -19,15 +19,6 @@
       gtag('config', 'G-4TBS1X7D0T');
     </script>
 
-    <!-- Google Tag Manager -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-5R8NKT7B"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'GT-5R8NKT7B');
-    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17324751968"></script>
@@ -51,14 +42,14 @@
     <meta property="og:url" content="https://healthinsurancecomparison.co.nz/" />
     <meta property="og:title" content="Health Insurance Comparison - Compare Health Insurance Plans in New Zealand" />
     <meta property="og:description" content="Compare health insurance plans in New Zealand. Find the best coverage from top providers including Southern Cross, nib, and AIA. Get instant quotes and compare benefits." />
-    <meta property="og:image" content="https://healthinsurancecomparison.co.nz/og-image.jpg" />
+    <meta property="og:image" content="https://healthinsurancecomparison.co.nz/og-image.svg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://healthinsurancecomparison.co.nz/" />
     <meta property="twitter:title" content="Health Insurance Comparison - Compare Health Insurance Plans in New Zealand" />
     <meta property="twitter:description" content="Compare health insurance plans in New Zealand. Find the best coverage from top providers including Southern Cross, nib, and AIA. Get instant quotes and compare benefits." />
-    <meta property="twitter:image" content="https://healthinsurancecomparison.co.nz/og-image.jpg" />
+    <meta property="twitter:image" content="https://healthinsurancecomparison.co.nz/og-image.svg" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://healthinsurancecomparison.co.nz/" />
@@ -69,10 +60,18 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#0284c7" />
     
-    <!-- Google Fonts -->
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://images.squarespace-cdn.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+    <link rel="preload" href="/logo.png" as="image">
+    <link rel="preload" href="/og-image.svg" as="image">
     
     <!-- Prevent indexing of www version -->
     <script>
@@ -81,8 +80,6 @@
       }
     </script>
 
-    <!-- Preconnect to external domains -->
-    <script type="module" src="/src/main.tsx"></script>
 
     <!-- Schema.org markup -->
     <script type="application/ld+json">

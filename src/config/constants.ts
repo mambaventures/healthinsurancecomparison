@@ -3,7 +3,7 @@ export const SITE_NAME = 'Health Insurance Comparison';
 export const DEFAULT_META = {
   title: `${SITE_NAME} - Compare Health Insurance Plans in New Zealand`,
   description: 'Compare health insurance plans in New Zealand. Find the best coverage from top providers including Southern Cross, nib, and AIA. Get instant quotes and compare benefits.',
-  image: `${SITE_URL}/og-image.jpg`,
+  image: `${SITE_URL}/og-image.svg`,
   keywords: [
     'health insurance nz',
     'health insurance new zealand',

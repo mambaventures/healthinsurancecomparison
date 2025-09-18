@@ -2,6 +2,7 @@ import React from 'react';
 import { Shield, Heart, DollarSign, Users, CheckCircle, ArrowRight, Calendar, Clock, Star, ArrowUpRight, Search, FileText, Award } from 'lucide-react';
 import { useNavigate, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import ServiceSchema from '../components/schemas/ServiceSchema';
 
 function Home() {
   const navigate = useNavigate();

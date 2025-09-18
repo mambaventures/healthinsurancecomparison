@@ -48,10 +48,11 @@ function QuotesThankYou() {
                 <h2 className="text-2xl font-bold text-gray-900">What Happens Next?</h2>
                 <p className="text-gray-600 mt-1">Here's what you can expect</p>
               </div>
-              <img 
-                src="https://github.com/mambaventures/healthinsurancecomparison/blob/02b4a9140412acccb2098457e896198814ee45c0/logos/legacy.png?raw=true"
-                alt="Legacy Group Logo"
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5785b287ebbd1aedaf8e21c0/1469758536973-I4IKTAGEFUBH2I9DP4FH/Evolve+Logo_White-01.png"
+                alt="Evolve Group Limited Logo"
                 className="h-12 object-contain"
+                loading="lazy"
               />
             </div>
 
@@ -62,7 +63,7 @@ function QuotesThankYou() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Expert Consultation</h3>
-                  <p className="text-gray-600">A licensed insurance advisor from Legacy Group will call you within 24 hours to discuss your options.</p>
+                  <p className="text-gray-600">A licensed insurance advisor from Evolve Group Limited will call you within 24 hours to discuss your options.</p>
                 </div>
               </div>
 
@@ -163,6 +164,7 @@ function QuotesThankYou() {
                     src="/images/family-healthcare.jpg"
                     alt="Understanding Health Insurance"
                     className="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">Understanding Health Insurance in NZ</h3>
@@ -178,6 +180,7 @@ function QuotesThankYou() {
                     src="/images/savings-piggybank.jpg"
                     alt="Save on Premiums"
                     className="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">10 Ways to Save on Premiums</h3>
@@ -193,6 +196,7 @@ function QuotesThankYou() {
                     src="/images/medical-checkup.jpg"
                     alt="Comparing Providers"
                     className="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">Comparing Health Insurance Providers</h3>
