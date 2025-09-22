@@ -12,10 +12,11 @@ declare global {
 
 function QuotesThankYou() {
   useEffect(() => {
-    // Fire Google tag lead submission event
+    // Fire Google Ads conversion event
     if (typeof window.gtag === 'function') {
-      window.gtag('event', 'lead_submission', {
-        // <event_parameters>
+      console.log('Firing Google Ads conversion event');
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-17324751968'
       });
     }
   }, []);
