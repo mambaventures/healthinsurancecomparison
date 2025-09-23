@@ -24,6 +24,7 @@ function UnimedReview() {
       <SEO
         title="UniMed Health Insurance Review 2025 | Health Insurance Comparison"
         description="Expert review of UniMed health insurance. Compare workplace and family plans, pricing, and benefits. Read our detailed analysis and customer reviews."
+        canonicalUrl="https://healthinsurancecomparison.co.nz/reviews/unimed"
       />
       <InsuranceProductSchema product={insuranceProduct} />
       <div className="bg-white">

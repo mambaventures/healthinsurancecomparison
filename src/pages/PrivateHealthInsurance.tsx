@@ -9,6 +9,7 @@ function PrivateHealthInsurance() {
       <SEO
         title="Private Health Insurance NZ - Complete Guide 2025 | HealthCompare"
         description="Everything you need to know about private health insurance in New Zealand. Compare providers, understand benefits, and find the best private health cover."
+        canonicalUrl="https://healthinsurancecomparison.co.nz/private-health-insurance"
         keywords={[
           'private health insurance nz',
           'private medical insurance new zealand',

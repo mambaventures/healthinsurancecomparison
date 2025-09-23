@@ -9,6 +9,7 @@ function MedicalInsuranceGuide() {
       <SEO
         title="Medical Insurance NZ Complete Guide 2025 | HealthCompare"
         description="Complete guide to medical insurance in New Zealand. Compare coverage options, understand benefits, and find the best medical insurance for your needs."
+        canonicalUrl="https://healthinsurancecomparison.co.nz/guides/medical-insurance"
         keywords={[
           'medical insurance nz',
           'medical insurance comparison',

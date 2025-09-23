@@ -25,6 +25,7 @@ function AIAReview() {
       <SEO
         title="AIA Health Insurance Review 2025 | Health Insurance Comparison"
         description="Expert review of AIA health insurance. Compare plans, pricing, and benefits including the Vitality program. Read our detailed analysis and customer reviews."
+        canonicalUrl="https://healthinsurancecomparison.co.nz/reviews/aia"
       />
       <InsuranceProductSchema product={insuranceProduct} />
       <div className="bg-white">
