@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { DEFAULT_META, SITE_URL } from '../config/constants';
+
+// Declare gtag function for TypeScript
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
 
 interface SEOProps {
   title?: string;
@@ -25,6 +32,21 @@ const SEO: React.FC<SEOProps> = ({
   publishedDate,
   modifiedDate
 }) => {
+  useEffect(() => {
+    // Send page view to Google Analytics when component mounts
+    if (typeof window.gtag === 'function') {
+      window.gtag('config', 'GT-5R8NKT7B', {
+        page_title: title,
+        page_location: canonicalUrl
+      });
+
+      window.gtag('config', 'G-4TBS1X7D0T', {
+        page_title: title,
+        page_location: canonicalUrl
+      });
+    }
+  }, [title, canonicalUrl]);
+
   return (
     <Helmet>
       {/* Primary Meta Tags */}
