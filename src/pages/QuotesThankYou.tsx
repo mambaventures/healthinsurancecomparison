@@ -6,51 +6,57 @@ import { trackConversion } from '../utils/analytics';
 
 function QuotesThankYou() {
   useEffect(() => {
-    console.log('🔍 Thank you page mounted, starting conversion tracking...');
+    // Immediate execution - no delays
+    console.log('🔍 THANK YOU PAGE MOUNTED - FIRING CONVERSIONS NOW!');
 
-    // Check if gtag is available immediately
-    if (typeof window.gtag === 'function') {
-      console.log('✅ gtag is available immediately');
-    } else {
-      console.warn('⚠️ gtag not available immediately, will retry...');
-    }
-
-    // Small delay to ensure GA4 is loaded
-    const timer = setTimeout(() => {
-      console.log('🔍 Timer fired, checking gtag availability...');
-
+    // Fire conversion tracking immediately
+    try {
       if (typeof window.gtag === 'function') {
-        console.log('✅ gtag confirmed available, firing conversions...');
+        console.log('✅ gtag available - firing conversions...');
 
-        // Fire Google Ads conversion event using utility function
-        console.log('🚀 Firing trackConversion utility...');
-        trackConversion('AW-17324751968');
+        // Fire multiple conversion events
+        const transactionId = `tx_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
 
-        // Also fire enhanced conversion without label (backup method)
-        console.log('🚀 Firing direct gtag conversion...');
-        const transactionId = crypto.randomUUID();
+        // Method 1: Direct Google Ads conversion
         window.gtag('event', 'conversion', {
           'send_to': 'AW-17324751968',
           'value': 1.0,
           'currency': 'NZD',
           'transaction_id': transactionId
         });
-        console.log(`🎯 Enhanced conversion fired with ID: ${transactionId}`);
+        console.log('🎯 METHOD 1: Google Ads conversion fired');
 
-        // Test if dataLayer is receiving events
-        console.log('📊 Current dataLayer:', window.dataLayer);
+        // Method 2: GA4 generate_lead event
+        window.gtag('event', 'generate_lead', {
+          'currency': 'NZD',
+          'value': 1.0,
+          'transaction_id': transactionId
+        });
+        console.log('📊 METHOD 2: GA4 generate_lead fired');
+
+        // Method 3: Custom event for debugging
+        window.gtag('event', 'health_insurance_lead', {
+          'event_category': 'conversion',
+          'event_label': 'thank_you_page',
+          'value': 1
+        });
+        console.log('🏷️ METHOD 3: Custom event fired');
+
+        console.log(`💰 ALL CONVERSIONS FIRED WITH ID: ${transactionId}`);
 
       } else {
-        console.error('❌ gtag STILL not available after 500ms delay!');
-        console.log('🔍 window.gtag:', typeof window.gtag);
-        console.log('🔍 window.gtagReady:', (window as any).gtagReady);
-        console.log('🔍 window.dataLayer:', window.dataLayer);
+        console.error('❌ CRITICAL: gtag NOT AVAILABLE!');
+        console.log('Debug info:', {
+          gtag: typeof window.gtag,
+          dataLayer: window.dataLayer,
+          gtagReady: (window as any).gtagReady
+        });
       }
+    } catch (error) {
+      console.error('❌ CONVERSION TRACKING ERROR:', error);
+    }
 
-      console.log('🎉 Conversion tracking attempt completed');
-    }, 500);
-
-    return () => clearTimeout(timer);
+    console.log('🎉 CONVERSION TRACKING COMPLETE');
   }, []);
 
   return (
