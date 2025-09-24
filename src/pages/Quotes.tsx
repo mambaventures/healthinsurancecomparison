@@ -132,13 +132,18 @@ function Quotes() {
         };
         
         try {
+          console.log('🚀 Submitting form data to Netlify...');
+
           await fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode(submitData),
           });
 
+          console.log('✅ Form submitted successfully to Netlify');
+
           // Track form submission event
+          console.log('📊 Tracking form submission event...');
           trackEvent('form_submission', {
             form_name: 'health-quote',
             email: formData.email,
@@ -148,6 +153,7 @@ function Quotes() {
             budget: formData.budget
           });
 
+          console.log('🧭 Navigating to thank you page...');
           navigate("/quotes/thank-you");
         } catch (error) {
           console.error('Form submission error:', error);
