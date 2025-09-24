@@ -135,7 +135,7 @@ function Quotes() {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode(submitData),
           });
-          window.location.href = "/thank-you.html";
+          window.location.href = "/quotes/thank-you";
         } catch (error) {
           console.error('Form submission error:', error);
           alert('There was an error submitting your form. Please try again.');
