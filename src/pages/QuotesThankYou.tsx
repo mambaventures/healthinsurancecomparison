@@ -5,6 +5,9 @@ import SEO from '../components/SEO';
 import { trackConversion } from '../utils/analytics';
 
 function QuotesThankYou() {
+  // Immediate console log when component is created (not just mounted)
+  console.log('🚨 QUOTESTHANKYOU COMPONENT LOADED!');
+
   useEffect(() => {
     // Immediate execution - no delays
     console.log('🔍 THANK YOU PAGE MOUNTED - FIRING CONVERSIONS NOW!');
