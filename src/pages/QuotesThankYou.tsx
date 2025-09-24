@@ -2,23 +2,12 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Phone, Calendar, Clock, Shield, Mail, FileCheck, Lock } from 'lucide-react';
 import SEO from '../components/SEO';
-
-// Declare gtag function for TypeScript
-declare global {
-  interface Window {
-    gtag: (...args: any[]) => void;
-  }
-}
+import { trackConversion } from '../utils/analytics';
 
 function QuotesThankYou() {
   useEffect(() => {
-    // Fire Google Ads conversion event
-    if (typeof window.gtag === 'function') {
-      console.log('Firing Google Ads conversion event');
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-17324751968'
-      });
-    }
+    // Fire Google Ads conversion event using utility function
+    trackConversion('AW-17324751968');
   }, []);
 
   return (

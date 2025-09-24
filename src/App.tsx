@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { trackPageView } from './utils/analytics';
 import { Heart, DollarSign, Users, CheckCircle, Search, ArrowRight, Calendar, Clock, Star, ArrowUpRight } from 'lucide-react';
 import Breadcrumbs from './components/Breadcrumbs';
 import Home from './pages/Home';
@@ -83,6 +84,11 @@ function App() {
   const isQuotesPage = location.pathname === '/quotes';
   const isQuotesThankYouPage = location.pathname === '/quotes/thank-you';
   const isAdv1Page = location.pathname === '/adv-1';
+
+  // Track page views when route changes
+  useEffect(() => {
+    trackPageView(location.pathname + location.search);
+  }, [location]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
