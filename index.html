@@ -9,35 +9,27 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Google tag (gtag.js) - GA4 -->
+    <!-- Google tag (gtag.js) - Consolidated Setup -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TBS1X7D0T"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
+      // Configure GA4
       gtag('config', 'G-4TBS1X7D0T');
-    </script>
 
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17324751968"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
+      // Configure Google Ads
       gtag('config', 'AW-17324751968');
-    </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-5R8NKT7B"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
+      // Configure Google Tag (if needed)
       gtag('config', 'GT-5R8NKT7B');
+
+      // Debug: Log when gtag is ready
+      console.log('🔧 Google Analytics/Ads loaded - gtag ready');
+
+      // Make gtag globally accessible for debugging
+      window.gtagReady = true;
     </script>
 
 

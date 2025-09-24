@@ -6,23 +6,48 @@ import { trackConversion } from '../utils/analytics';
 
 function QuotesThankYou() {
   useEffect(() => {
+    console.log('🔍 Thank you page mounted, starting conversion tracking...');
+
+    // Check if gtag is available immediately
+    if (typeof window.gtag === 'function') {
+      console.log('✅ gtag is available immediately');
+    } else {
+      console.warn('⚠️ gtag not available immediately, will retry...');
+    }
+
     // Small delay to ensure GA4 is loaded
     const timer = setTimeout(() => {
-      // Fire Google Ads conversion event using utility function
-      trackConversion('AW-17324751968');
+      console.log('🔍 Timer fired, checking gtag availability...');
 
-      // Also fire enhanced conversion without label (backup method)
       if (typeof window.gtag === 'function') {
+        console.log('✅ gtag confirmed available, firing conversions...');
+
+        // Fire Google Ads conversion event using utility function
+        console.log('🚀 Firing trackConversion utility...');
+        trackConversion('AW-17324751968');
+
+        // Also fire enhanced conversion without label (backup method)
+        console.log('🚀 Firing direct gtag conversion...');
+        const transactionId = crypto.randomUUID();
         window.gtag('event', 'conversion', {
           'send_to': 'AW-17324751968',
           'value': 1.0,
           'currency': 'NZD',
-          'transaction_id': crypto.randomUUID()
+          'transaction_id': transactionId
         });
-        console.log('🎯 Enhanced conversion fired (backup method)');
+        console.log(`🎯 Enhanced conversion fired with ID: ${transactionId}`);
+
+        // Test if dataLayer is receiving events
+        console.log('📊 Current dataLayer:', window.dataLayer);
+
+      } else {
+        console.error('❌ gtag STILL not available after 500ms delay!');
+        console.log('🔍 window.gtag:', typeof window.gtag);
+        console.log('🔍 window.gtagReady:', (window as any).gtagReady);
+        console.log('🔍 window.dataLayer:', window.dataLayer);
       }
 
-      console.log('🎉 All conversion events fired on thank you page');
+      console.log('🎉 Conversion tracking attempt completed');
     }, 500);
 
     return () => clearTimeout(timer);
