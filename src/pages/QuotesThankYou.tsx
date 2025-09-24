@@ -10,7 +10,19 @@ function QuotesThankYou() {
     const timer = setTimeout(() => {
       // Fire Google Ads conversion event using utility function
       trackConversion('AW-17324751968');
-      console.log('🎉 Conversion event fired on thank you page');
+
+      // Also fire enhanced conversion without label (backup method)
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', {
+          'send_to': 'AW-17324751968',
+          'value': 1.0,
+          'currency': 'NZD',
+          'transaction_id': crypto.randomUUID()
+        });
+        console.log('🎯 Enhanced conversion fired (backup method)');
+      }
+
+      console.log('🎉 All conversion events fired on thank you page');
     }, 500);
 
     return () => clearTimeout(timer);

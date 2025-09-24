@@ -38,17 +38,27 @@ export const trackEvent = (eventName: string, parameters: Record<string, any> = 
 };
 
 // Track conversions (specifically for Google Ads)
-export const trackConversion = (conversionId: string, conversionLabel?: string) => {
+export const trackConversion = (conversionId: string, conversionLabel?: string, transactionId?: string) => {
   if (typeof window.gtag === 'function') {
     const conversionData: any = {
-      send_to: conversionId
+      send_to: conversionLabel ? `${conversionId}/${conversionLabel}` : conversionId,
+      transaction_id: transactionId || crypto.randomUUID(), // Unique ID for deduplication
+      value: 1.0, // You can adjust this value
+      currency: 'NZD'
     };
 
-    if (conversionLabel) {
-      conversionData.send_to = `${conversionId}/${conversionLabel}`;
-    }
-
     window.gtag('event', 'conversion', conversionData);
-    console.log('Firing Google Ads conversion event:', conversionData);
+    console.log('🎯 Google Ads conversion fired:', conversionData);
+
+    // Also track as a GA4 event for better visibility
+    window.gtag('event', 'generate_lead', {
+      currency: 'NZD',
+      value: 1.0,
+      event_category: 'lead_generation',
+      event_label: 'health_insurance_quote'
+    });
+    console.log('📊 GA4 generate_lead event fired');
+  } else {
+    console.error('❌ gtag not available for conversion tracking');
   }
 };
