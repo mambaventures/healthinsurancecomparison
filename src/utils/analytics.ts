@@ -9,6 +9,8 @@ declare global {
 // Track page views for SPA navigation
 export const trackPageView = (path: string, title?: string) => {
   if (typeof window.gtag === 'function') {
+    console.log('📊 GA4 Page View:', path, title || document.title);
+
     window.gtag('config', 'G-4TBS1X7D0T', {
       page_path: path,
       page_title: title || document.title,
@@ -23,6 +25,8 @@ export const trackPageView = (path: string, title?: string) => {
     window.gtag('config', 'GT-5R8NKT7B', {
       page_path: path,
     });
+  } else {
+    console.warn('⚠️ gtag not available for page view tracking');
   }
 };
 

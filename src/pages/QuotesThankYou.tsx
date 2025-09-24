@@ -6,8 +6,14 @@ import { trackConversion } from '../utils/analytics';
 
 function QuotesThankYou() {
   useEffect(() => {
-    // Fire Google Ads conversion event using utility function
-    trackConversion('AW-17324751968');
+    // Small delay to ensure GA4 is loaded
+    const timer = setTimeout(() => {
+      // Fire Google Ads conversion event using utility function
+      trackConversion('AW-17324751968');
+      console.log('🎉 Conversion event fired on thank you page');
+    }, 500);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (

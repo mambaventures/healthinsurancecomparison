@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Shield, ArrowRight, CheckCircle, Lock, FileCheck, UserCheck, Clock } from 'lucide-react';
 import SEO from '../components/SEO';
+import { trackEvent } from '../utils/analytics';
 
 interface FormData {
   step: number;
@@ -17,6 +18,7 @@ interface FormData {
 }
 
 function Quotes() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState<FormData>({
     step: 1,
     firstName: '',
@@ -135,7 +137,18 @@ function Quotes() {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode(submitData),
           });
-          window.location.href = "/quotes/thank-you";
+
+          // Track form submission event
+          trackEvent('form_submission', {
+            form_name: 'health-quote',
+            email: formData.email,
+            location: formData.location,
+            age: formData.age,
+            coverage: formData.coverage.join(', '),
+            budget: formData.budget
+          });
+
+          navigate("/quotes/thank-you");
         } catch (error) {
           console.error('Form submission error:', error);
           alert('There was an error submitting your form. Please try again.');
