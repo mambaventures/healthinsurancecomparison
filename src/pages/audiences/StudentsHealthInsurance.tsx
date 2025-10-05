@@ -140,6 +140,12 @@ function StudentsHealthInsurance() {
               <p className="text-gray-600 text-lg">
                 Compare student-friendly health insurance providers and find the perfect plan for your needs and budget.
               </p>
+              <div className="mt-4">
+                <Link to="/blog/student-health-insurance-nz" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
+                  📚 Read our complete guide: Student Health Insurance NZ 2025
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

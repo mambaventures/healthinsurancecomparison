@@ -75,8 +75,16 @@ function HealthInsuranceForeigners() {
         <div className="prose prose-lg max-w-none">
           <h2>Can Foreigners Get Health Insurance in New Zealand?</h2>
           
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
+            <p className="text-blue-900">
+              Need health insurance as a foreigner in NZ? Visit our dedicated
+              {' '}<Link to="/foreigners-health-insurance" className="text-blue-600 hover:text-blue-800 font-semibold underline">foreigners health insurance page</Link>{' '}
+              to compare plans designed for expats, migrants, and non-residents.
+            </p>
+          </div>
+
           <p>
-            Yes, foreigners living in New Zealand can absolutely get private health insurance. However, your eligibility, 
+            Yes, foreigners living in New Zealand can absolutely get private health insurance. However, your eligibility,
             coverage options, and pricing will depend on several factors including your visa status, length of stay, 
             and the insurance provider you choose.
           </p>

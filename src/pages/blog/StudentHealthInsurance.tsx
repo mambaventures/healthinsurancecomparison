@@ -206,7 +206,7 @@ function StudentHealthInsurance() {
           <div className="space-y-6 my-8">
             <div className="border border-gray-200 rounded-lg p-6">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-semibold">Southern Cross Health Society</h3>
+                <Link to="/reviews/southern-cross" className="text-xl font-semibold text-blue-600 hover:text-blue-800">Southern Cross Health Society →</Link>
                 <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Recommended</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -240,7 +240,7 @@ function StudentHealthInsurance() {
 
             <div className="border border-gray-200 rounded-lg p-6">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-semibold">nib Health Insurance</h3>
+                <Link to="/reviews/nib" className="text-xl font-semibold text-blue-600 hover:text-blue-800">nib Health Insurance →</Link>
                 <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Budget-Friendly</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -271,6 +271,14 @@ function StudentHealthInsurance() {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
+            <p className="text-blue-900">
+              Looking for student-specific health insurance options? Check out our comprehensive
+              {' '}<Link to="/students-health-insurance" className="text-blue-600 hover:text-blue-800 font-semibold underline">student health insurance comparison page</Link>{' '}
+              to compare affordable plans, discounts, and find the best coverage for your budget.
+            </p>
           </div>
 
           <h2>How to Choose the Right Student Health Insurance</h2>
