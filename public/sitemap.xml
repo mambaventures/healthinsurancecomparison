@@ -235,6 +235,27 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Provider Comparison Pages -->
+  <url>
+    <loc>https://healthinsurancecomparison.co.nz/reviews/aia-vs-southern-cross</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://healthinsurancecomparison.co.nz/reviews/nib-vs-partners-life</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://healthinsurancecomparison.co.nz/reviews/accuro-vs-unimed</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <url>
     <loc>https://healthinsurancecomparison.co.nz/students-health-insurance</loc>
     <lastmod>2025-10-05</lastmod>

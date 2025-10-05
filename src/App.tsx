@@ -27,6 +27,9 @@ import StudentHealthInsurance from './pages/blog/StudentHealthInsurance';
 import HealthInsuranceCompaniesComparison from './pages/blog/HealthInsuranceCompaniesComparison';
 import HospitalCoverInsurance from './pages/blog/HospitalCoverInsurance';
 import SouthernCrossVsNib from './pages/comparisons/SouthernCrossVsNib';
+import AIAVsSouthernCross from './pages/comparisons/AIAVsSouthernCross';
+import NibVsPartnersLife from './pages/comparisons/NibVsPartnersLife';
+import AccuroVsUnimed from './pages/comparisons/AccuroVsUnimed';
 import BestProviders from './pages/comparisons/BestProviders';
 import StudentsHealthInsurance from './pages/audiences/StudentsHealthInsurance';
 import ForeignersHealthInsurance from './pages/audiences/ForeignersHealthInsurance';
@@ -133,6 +136,9 @@ function App() {
         <Route path="/blog/health-insurance-companies-comparison" element={<HealthInsuranceCompaniesComparison />} />
         <Route path="/blog/hospital-cover-insurance-nz" element={<HospitalCoverInsurance />} />
         <Route path="/compare/southern-cross-vs-nib" element={<SouthernCrossVsNib />} />
+        <Route path="/reviews/aia-vs-southern-cross" element={<AIAVsSouthernCross />} />
+        <Route path="/reviews/nib-vs-partners-life" element={<NibVsPartnersLife />} />
+        <Route path="/reviews/accuro-vs-unimed" element={<AccuroVsUnimed />} />
         <Route path="/best-health-insurance-companies-nz" element={<BestProviders />} />
         <Route path="/students-health-insurance" element={<StudentsHealthInsurance />} />
         <Route path="/foreigners-health-insurance" element={<ForeignersHealthInsurance />} />
