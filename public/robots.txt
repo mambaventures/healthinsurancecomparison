@@ -9,3 +9,6 @@ Sitemap: https://healthinsurancecomparison.co.nz/sitemap.xml
 
 # Crawl delay to prevent overloading
 Crawl-delay: 1
+
+# Note: Netlify preview domains (*.netlify.app) are blocked via X-Robots-Tag headers
+# Only healthinsurancecomparison.co.nz should be indexed

@@ -59,6 +59,16 @@
     <!-- Additional SEO Meta Tags -->
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
+
+    <!-- Block indexing on Netlify preview domains -->
+    <script>
+      if (window.location.hostname.includes('.netlify.app')) {
+        const metaRobots = document.querySelector('meta[name="robots"]');
+        if (metaRobots) {
+          metaRobots.setAttribute('content', 'noindex, nofollow');
+        }
+      }
+    </script>
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#0284c7" />
     
