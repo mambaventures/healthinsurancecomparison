@@ -142,9 +142,191 @@
         }]
       }
     </script>
+
+    <!-- Loading Skeleton CSS -->
+    <style>
+      #loading-skeleton {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom, #eff6ff, #ffffff);
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #loading-skeleton.loaded {
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+        pointer-events: none;
+      }
+
+      .skeleton-header {
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .skeleton-logo {
+        width: 250px;
+        height: 32px;
+        background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 4px;
+      }
+
+      .skeleton-nav {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .skeleton-nav-item {
+        width: 80px;
+        height: 32px;
+        background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 4px;
+      }
+
+      .skeleton-content {
+        max-width: 1280px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+        flex: 1;
+      }
+
+      .skeleton-hero {
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(90deg, #dbeafe 25%, #eff6ff 50%, #dbeafe 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+      }
+
+      .skeleton-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .skeleton-card {
+        height: 200px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+      }
+
+      .skeleton-card-header {
+        width: 60%;
+        height: 24px;
+        background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+      }
+
+      .skeleton-card-line {
+        width: 100%;
+        height: 16px;
+        background: linear-gradient(90deg, #f3f4f6 25%, #f9fafb 50%, #f3f4f6 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 4px;
+        margin-bottom: 0.75rem;
+      }
+
+      .skeleton-card-line:last-child {
+        width: 75%;
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: 200% 0;
+        }
+        100% {
+          background-position: -200% 0;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .skeleton-nav {
+          display: none;
+        }
+        .skeleton-hero {
+          height: 150px;
+        }
+        .skeleton-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
 </head>
 <body>
+  <!-- Loading Skeleton -->
+  <div id="loading-skeleton">
+    <div class="skeleton-header">
+      <div class="skeleton-logo"></div>
+      <div class="skeleton-nav">
+        <div class="skeleton-nav-item"></div>
+        <div class="skeleton-nav-item"></div>
+        <div class="skeleton-nav-item"></div>
+      </div>
+    </div>
+    <div class="skeleton-content">
+      <div class="skeleton-hero"></div>
+      <div class="skeleton-grid">
+        <div class="skeleton-card">
+          <div class="skeleton-card-header"></div>
+          <div class="skeleton-card-line"></div>
+          <div class="skeleton-card-line"></div>
+          <div class="skeleton-card-line"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-card-header"></div>
+          <div class="skeleton-card-line"></div>
+          <div class="skeleton-card-line"></div>
+          <div class="skeleton-card-line"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-card-header"></div>
+          <div class="skeleton-card-line"></div>
+          <div class="skeleton-card-line"></div>
+          <div class="skeleton-card-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- React Root -->
   <div id="root"></div>
+
+  <!-- Hide skeleton when React loads -->
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        const skeleton = document.getElementById('loading-skeleton');
+        if (skeleton && document.getElementById('root').innerHTML) {
+          skeleton.classList.add('loaded');
+          setTimeout(function() {
+            skeleton.remove();
+          }, 300);
+        }
+      }, 100);
+    });
+  </script>
+
   <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
