@@ -81,6 +81,9 @@ import HealthInsuranceExcessGuide from './pages/education/HealthInsuranceExcessG
 import HealthInsuranceClaimsProcess from './pages/education/HealthInsuranceClaimsProcess';
 import HealthInsuranceTerminologyGuide from './pages/education/HealthInsuranceTerminologyGuide';
 
+// Hub pages (2025 SEO optimized)
+import HealthInsuranceNZ2025 from './pages/HealthInsuranceNZ2025';
+
 function App() {
   const location = useLocation();
   const hideFooter = location.pathname === '/quotes' || location.pathname === '/quotes/thank-you';
